@@ -43,8 +43,8 @@
 
 .card {
     display: inline-block;
-    width: 400px;
-    height: 140px;
+    width: calc(100% - 400px);
+    height: calc(100% - 140px);
     background-color: #fff;
     border-radius: 10px;
     outline: 1px, solid rgba(0, 0, 0, .5);
