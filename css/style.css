@@ -1,5 +1,47 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+#projetos {
+    padding: 5vh;
+    display: inline-block;
+    align-items: center;
+}
+
+h2 {
+    padding: 2.25vh;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(58, 75, 69);
+    height: 8vh;
+}
+
+.nav-list {
+    list-style: none;
+    display: inline-flex;
+}
+
+.nav-list li {
+    margin-left: 32px;
+}
+
+.centro {
+    text-align: center;
+}
+
 .animated-background {
-    background: linear-gradient(to right, #4E615E, #0E5E52, #6FF7E3);
+    background: linear-gradient(to right, #4e615e86, #0e5e5280, #6ff7e381);
     background-size: 400% 400%;
     animation: animate-background 10s infinite ease-in-out;
 }
@@ -14,31 +56,6 @@
     100% {
         background-position: 0 50%;
     }
-}
-
-.navigation {
-    border-radius: 5px;
-    width: 100%;
-    display: flex;
-    background-color: rgb(170, 187, 182);
-    z-index: 99;
-}
-
-.navigation a {
-    text-decoration: none;
-    color: #222;
-}
-
-.navigation li {
-    margin: auto 20px auto 40px;
-    float: left;
-    list-style: none;
-    margin-left: 20px;
-}
-
-.navigation li a:hover {
-    opacity: 0.6;
-    transition: 0.3s;
 }
 
 .card {

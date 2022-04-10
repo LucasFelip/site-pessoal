@@ -1,6 +1,6 @@
 body {
     font-family: 'Montserrat', sans-serif;
-    width: calc(100% - 100px);
+    width: calc(100% - 500px);
     color: #fff;
     margin-left: auto;
     margin-right: auto;
@@ -31,7 +31,7 @@ div {
 }
 
 .card-special {
-    display: block;
+    display: inline-block;
     background-color: #fff;
     border-radius: 10px;
     position: relative;
