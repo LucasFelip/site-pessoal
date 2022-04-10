@@ -7,7 +7,9 @@
 
 #projetos {
     padding: 5vh;
-    display: inline-block;
+    width: 88vh;
+    margin: auto;
+    padding: auto;
     align-items: center;
 }
 
@@ -36,8 +38,76 @@ nav {
     margin-left: 32px;
 }
 
-.centro {
-    text-align: center;
+.mobile-menu {
+    display: none;
+    cursor: pointer;
+}
+
+.mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
+    transition: 0.3s;
+}
+
+@media (max-width: 999px) {
+    body {
+        overflow-x: hidden;
+    }
+    #projetos {
+        padding: 5vh;
+        width: 50vw;
+        align-items: center;
+    }
+    .nav-list {
+        z-index: 100;
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 50vw;
+        height: 92vh;
+        background-color: rgb(58, 75, 69);
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+    }
+    .nav-list li {
+        margin-left: 0;
+        opacity: 0;
+    }
+    .mobile-menu {
+        display: block;
+    }
+}
+
+.nav-list.active {
+    transform: translateX(0);
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .line2 {
+    opacity: 0;
+}
+
+.mobile-menu.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
 }
 
 .animated-background {
