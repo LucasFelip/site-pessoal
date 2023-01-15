@@ -1,0 +1,23 @@
+.card {
+    width: 200%;
+    height: 120%;
+    overflow: hidden;
+    backdrop-filter: blur(11px) saturate(139%);
+    -webkit-backdrop-filter: blur(11px) saturate(139%);
+    background-color: rgba(17, 25, 40, 0.75);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.card-image {
+    position: absolute;
+    width: 60%;
+    height: 60%;
+    object-fit: cover;
+    opacity: .6;
+    transition: transform .75s;
+}
+
+.card:hover .card-image {
+    transform: scale(1.15);
+}

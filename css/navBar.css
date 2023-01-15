@@ -1,0 +1,16 @@
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #1e1e1e;
+    height: 7vh;
+}
+
+.nav-list {
+    list-style: none;
+    display: inline-flex;
+}
+
+.nav-list li {
+    margin-left: 7vh;
+}
