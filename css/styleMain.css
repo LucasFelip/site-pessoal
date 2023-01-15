@@ -1,4 +1,10 @@
-body {
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+main {
     font-family: 'Montserrat', sans-serif;
     margin-left: auto;
     margin-right: auto;
@@ -6,6 +12,10 @@ body {
     background-image:
             radial-gradient(at 47% 33%, hsl(162.00, 77%, 40%) 0, transparent 59%),
             radial-gradient(at 82% 65%, hsl(218.00, 39%, 11%) 0, transparent 55%);
+}
+
+div {
+    margin: 15px;
 }
 
 h2 {
@@ -18,10 +28,6 @@ h2:hover {
     transition: 0.3s;
 }
 
-div {
-    margin: 15px;
-}
-
 .centro {
     text-align: center;
 }
@@ -30,18 +36,4 @@ div {
     margin: auto 1px auto 70px;
     text-decoration: none;
     color: #fff;
-}
-
-.card-special {
-    display: inline-block;
-    background-color: #fff;
-    border-radius: 10px;
-    position: relative;
-    overflow: hidden;
-}
-
-.linguagens {
-    padding: 15px;
-    height: 30px;
-    width: 40px;
 }
