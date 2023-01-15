@@ -1,9 +1,11 @@
 body {
     font-family: 'Montserrat', sans-serif;
-    width: calc(100% - 500px);
-    color: #fff;
     margin-left: auto;
     margin-right: auto;
+    background-color: #111927;
+    background-image:
+            radial-gradient(at 47% 33%, hsl(162.00, 77%, 40%) 0, transparent 59%),
+            radial-gradient(at 82% 65%, hsl(218.00, 39%, 11%) 0, transparent 55%);
 }
 
 h2 {
