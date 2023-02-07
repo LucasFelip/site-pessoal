@@ -1,0 +1,16 @@
+body {
+    font-family: Montserrat, Arial;
+    margin: 0;
+}
+
+.center {
+    padding: 10vb;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 767px) {
+    .center {
+        height: auto;
+    }
+}
