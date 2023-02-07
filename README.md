@@ -11,7 +11,7 @@ Lucas Ferreira - [<img src=https://cdn.iconscout.com/icon/free/png-256/github-16
 
 
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/fcef6c13-7c5e-41e2-a39d-7fa6862f08bf/deploy-status)](https://app.netlify.com/sites/lucas-ferreira/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/4af1ab19-2469-42a2-8907-d49f6eeeb328/deploy-status)](https://app.netlify.com/sites/lucas-ferreira/deploys)
 
 [link.site.githubpages]: <https://lucasfelip.github.io/curriculo/>
 [link.github.lusca]: <https://github.com/LucasFelip>
