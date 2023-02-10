@@ -1,59 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/mainStyle.css"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
-          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <!-- Javascript -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-            crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
-            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-            crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
-            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assets/css/mainStyle.css"/>
+    <script src="/assets/js/IncludeComponent.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 
     <title>Lucas Ferreira</title>
 </head>
 <body>
-<header>
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-        <a class="navbar-brand" href="https://github.com/LucasFelip">Lucas Reis</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-                <a class="nav-item nav-link active" href="#principal">Principal <span class="sr-only">(current)</span></a>
-                <a class="nav-item nav-link" href="#habilidades">Habilidades</a>
-                <a class="nav-item nav-link" href="#projetos">Projetos</a>
-                <a class="nav-item nav-link" href="#experiencias">Experiências</a>
-                <a class="nav-item nav-link" href="#contatos">Contatos</a>
-            </div>
-        </div>
-    </nav>
-</header>
-<section class="container-fluid">
-    <section id="contatos" class="container text-center">
-        <h2>Contatos</h2>
-        <div align="center">
-            <a href="https://wa.me/5598988525278?text=Ol%C3%A1!%20Vim%20pelo%20seu%20site%2C%20vi%20suas%20habilidades%20e%20projetos%2C%20gostaria%20de%20conhecer%20o%20seu%20trabalho."><img
-                    src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white"></a>
-            <a href="mailto:lucasfelipereis@hotmail.com"><img
-                    src="https://img.shields.io/badge/Microsoft_Outlook-0078D4?style=for-the-badge&logo=microsoft-outlook&logoColor=white"></a>
-            <a href="https://www.linkedin.com/in/lucas-reis-5247b1221/"><img
-                    src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a>
-            <a href="https://github.com/LucasFelip"><img
-                    src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"></a>
-        </div>
-    </section>
+<div data-include="/component/navbar.html"></div>
+
+<section id="principal" class="container text-center">
+    <h2>Principal</h2>
 </section>
+
+<section id="habilidades" class="container text-center">
+    <h2>Habilidades</h2>
+</section>
+
+<section id="projetos" class="container text-center">
+    <h2>Projetos</h2>
+</section>
+
+<section id="experiencias" class="container text-center">
+    <h2>Experiências</h2>
+</section>
+
+<section id="contatos" class="container text-center ">
+    <h2>Contatos</h2>
+    <div align="center">
+        <a href="https://wa.me/5598988525278?text=Ol%C3%A1!%20Vim%20pelo%20seu%20site%2C%20vi%20suas%20habilidades%20e%20projetos%2C%20gostaria%20de%20conhecer%20o%20seu%20trabalho"><img
+                src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white"></a>
+        <a href="mailto:lucasfelipereis@hotmail.com"><img
+                src="https://img.shields.io/badge/Microsoft_Outlook-0078D4?style=for-the-badge&logo=microsoft-outlook&logoColor=white"></a>
+        <a href="https://www.linkedin.com/in/lucas-reis-5247b1221/"><img
+                src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a>
+        <a href="https://github.com/LucasFelip"><img
+                src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"></a>
+    </div>
+</section>
+<div data-include="/component/footer.html"></div>
+
+<script>
+    includeHTML();
+</script>
 </body>
 </html>
