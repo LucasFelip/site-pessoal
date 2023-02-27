@@ -5,10 +5,10 @@
 :envelope:  lucasfelipereis@hotmail.com
 
 ## Formação
-SENAI - Técnico em Redes de Computadores </br>
+SENAI — Técnico em Redes de Computadores </br>
 Periodo 2017 - 2018
 
-Instituto Federal de Educação, Ciência e Tecnologia do Maranhão - Sistema de Informação </br>
+Instituto Federal de Educação, Ciência e Tecnologia do Maranhão — Sistema de Informação </br>
 Periodo 2018 - 2023
 
 ## Experiência Profissional
@@ -33,10 +33,19 @@ Periodo 2018 - 2023
 * Inglês suficiente para ler e entender.
 * Comunicação interpessoal.
 
+
+
+### Frameworks
+* Bootstrap.
+* Spring Boot.
+* Flutter.
+
 ### Linguagens de Programação
 * Java.
 * Dart.
 * Python.
+* JavaScript.
+* C.
 
 ### Banco de Dados
 * MySQL.
@@ -56,6 +65,7 @@ Periodo 2018 - 2023
 * [Tora Software tutorial][site.tora]
 * [Projeto SDS3][github.sds]
 
+<br></br>
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/ae26dbf5-26f8-4c1a-bbd2-8183fad61d42/deploy-status)](https://app.netlify.com/sites/lucas-ferreira/deploys)
 
