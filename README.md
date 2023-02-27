@@ -1,4 +1,12 @@
-# Projeto Curriculo
+# Lucas Ferreira
+
+:house:    São Luís/MA <br>
+:iphone:   (98) 98852 - 5278 <br>
+:envelope:  lucasfelipereis@hotmail.com
+
+## Formação
+
+## Experiência Profissional
 
 ## 📜 Descrição
 O projeto tem como objetivo ser um estudo sobre desenvolvimento web
