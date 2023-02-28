@@ -33,8 +33,6 @@ Periodo 2018 - 2023
 * Inglês suficiente para ler e entender.
 * Comunicação interpessoal.
 
-
-
 ### Frameworks
 * Bootstrap.
 * Spring Boot.
@@ -64,6 +62,21 @@ Periodo 2018 - 2023
 * [Ambiente CISCO][github.cisco]
 * [Tora Software tutorial][site.tora]
 * [Projeto SDS3][github.sds]
+
+## Cursos e Eventos
+* Hackthon ([Certificado](assets/diplomas/Hackthon.pdf))
+* Capacitação em Routing e Switching ([Certificado](assets/diplomas/Capacitação_em_Routing_e_Switching.pdf))
+* Semana Spring React ([Certificado](assets/diplomas/Semana_Spring_React.pdf))
+* Project Development using JAVA for beginners ([Certificado](assets/diplomas/Project_Development_Using_JAVA_for_Beginners.pdf))
+* Jogos 3D com Unity modo multiplayer ([Certificado](assets/diplomas/Jogos_3D_com_Unity__modo_multiplayer.pdf))
+
+## Redes sociais
+<div align-items="center">
+  <a href="https://www.instagram.com/luckylusca/"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"></a>
+  <a href="https://wa.me/5598988525278?text=Ol%C3%A1!%20Vim%20pelo%20seu%20site%2C%20vi%20suas%20habilidades%20e%20projetos%2C%20gostaria%20de%20conhecer%20o%20seu%20trabalho"><img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white"></a>
+  <a href="mailto:lucasfelipereis@hotmail.com"><img src="https://img.shields.io/badge/Microsoft_Outlook-0078D4?style=for-the-badge&logo=microsoft-outlook&logoColor=white"></a>
+  <a href="https://www.linkedin.com/in/lucas-reis-5247b1221/" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a>
+</div>
 
 <br></br>
 
