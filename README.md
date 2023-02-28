@@ -33,17 +33,17 @@ Periodo 2018 - 2023
 * Inglês suficiente para ler e entender.
 * Comunicação interpessoal.
 
-### Frameworks
-* Bootstrap.
-* Spring Boot.
-* Flutter.
-
 ### Linguagens de Programação
 * Java.
 * Dart.
 * Python.
 * JavaScript.
 * C.
+
+### Frameworks
+* Bootstrap.
+* Spring Boot.
+* Flutter.
 
 ### Banco de Dados
 * MySQL.
