@@ -64,11 +64,11 @@ Periodo 2018 - 2023
 * [Projeto SDS3][github.sds]
 
 ## Cursos e Eventos
-* Hackthon ([Certificado](assets/diplomas/Hackthon.pdf))
-* Capacitação em Routing e Switching ([Certificado](assets/diplomas/Capacitação_em_Routing_e_Switching.pdf))
-* Semana Spring React ([Certificado](assets/diplomas/Semana_Spring_React.pdf))
-* Project Development using JAVA for beginners ([Certificado](assets/diplomas/Project_Development_Using_JAVA_for_Beginners.pdf))
-* Jogos 3D com Unity modo multiplayer ([Certificado](assets/diplomas/Jogos_3D_com_Unity__modo_multiplayer.pdf))
+* Hackthon ([Certificado](assets/documentos/diplomas/Hackthon.pdf))
+* Capacitação em Routing e Switching ([Certificado](assets/documentos/diplomas/Capacitação_em_Routing_e_Switching.pdf))
+* Semana Spring React ([Certificado](assets/documentos/diplomas/Semana_Spring_React.pdf))
+* Project Development using JAVA for beginners ([Certificado](assets/documentos/diplomas/Project_Development_Using_JAVA_for_Beginners.pdf))
+* Jogos 3D com Unity modo multiplayer ([Certificado](assets/documentos/diplomas/Jogos_3D_com_Unity__modo_multiplayer.pdf))
 
 ## Redes sociais
 <div align-items="center">
