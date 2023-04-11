@@ -1,5 +1,6 @@
 # Lucas Ferreira
-<h3> :rocket: &nbsp;Minhas Skills </h3>
+
+<h3> 🚀 Minhas Skills </h3>
 
 **Aplicações e Dados**
 
@@ -34,7 +35,7 @@
 
 <h3> 💼 &nbsp; Experiência Profissional </h3>
 
-[<img align="left" height="84px" width="84px" alt="TJMA" src="https://www.tjma.jus.br/imagens/logo_share.png">](https://www.tjma.jus.br/)
+[<img align="left" height="94px" width="94px" alt="TJMA" src="https://www.irib.org.br/app/webroot/files/downloads/images/MARCA%20SECUNDARIA%201.png">](https://www.tjma.jus.br/)
 **Gerente de Projeto Júnior** \
 [**TJMA**](https://www.tjma.jus.br/) • Estágio \
 Linguagens & Tecnologias: `Jira`, `Java`, `Eclipse`, `IntelliJ` \
@@ -42,7 +43,7 @@ Projetos em destaque: [SAPRE](), [Ambiente Jira - SAPRE]()
 
 <br/>
 
-[<img align="left" height="84px" width="84px" alt="TJMA" src="https://pbs.twimg.com/profile_images/1634235565972307983/XmMPgKm1_400x400.jpg">](https://www.tjma.jus.br/)
+[<img align="left" height="94px" width="94px" alt="TJMA" src="https://pbs.twimg.com/profile_images/1634235565972307983/XmMPgKm1_400x400.jpg">](https://www.tjma.jus.br/)
 
 **Desenvolvedor Júnior** \
 [**TJMA**](https://www.tjma.jus.br/) • Estágio \
