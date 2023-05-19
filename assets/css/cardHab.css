@@ -1,9 +1,9 @@
 .card {
-    width: 200px;
-    height: 260px;
-    background-color: #212121;
-    box-shadow: 15px 15px 30px #191919,
-    -15px -15px 30px #292929;
+    width: 120px;
+    height: 120px;
+    background-color: #cdcdcd;
+    box-shadow: 15px 15px 30px #cccccc,
+    -15px -15px 30px #8c8c8c;
     transition: border-radius cubic-bezier(0.075, 0.82, 0.165, 1) 1s,
     transform cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
 }
