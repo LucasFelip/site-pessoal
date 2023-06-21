@@ -15,3 +15,7 @@
 .navMenu a:hover {
     color: #FAC345;
 }
+
+.base {
+    padding: 1.2em;
+}
