@@ -1,0 +1,42 @@
+.footer-basic {
+    padding:40px 0;
+
+}
+
+.footer-basic ul {
+    padding:0;
+    list-style: none;
+    font-size:18px;
+    margin-bottom:0;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-basic li {
+    position: relative;
+    padding:0 10px;
+}
+
+.footer-basic li a {
+    display: block;
+    text-decoration:none;
+}
+
+.footer-basic li  ul{
+    position:absolute;
+    top:25px;
+    left:0;
+    background-color: #f6f4e6;
+    display:none;
+}
+
+.footer-basic ul a:hover {
+    color:#FAC345;
+}
+
+.footer-basic .copyright {
+    margin-top:15px;
+    text-align:center;
+    font-size:13px;
+    margin-bottom:0;
+}
