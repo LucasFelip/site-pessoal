@@ -1,21 +1,10 @@
-.navMenu {
-}
 
-.navMenu a {
+.navbar a {
     color: #f6f4e6;
-    text-decoration: none;
-    font-size: 1.2em;
-    text-transform: uppercase;
-    font-weight: 500;
-    width: 80px;
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
 }
 
-.navMenu a:hover {
+.navbar a:hover {
     color: #FAC345;
-}
-
-.base {
-    padding: 1.2em;
 }

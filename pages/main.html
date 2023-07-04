@@ -4,13 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link href="/assets/img/icon-avatar.svg" rel="icon">
-    <link href="/assets/css/base.css" rel="stylesheet">
-    <script src="/assets/js/IncludeComponent.js"></script>
-
     <!-- External Scripts -->
     <!-- code by @jlmakes - https://github.com/jlmakes/scrollreveal -->
     <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- code by Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+    <link href="/assets/img/icon-avatar.svg" rel="icon">
+    <link href="/assets/css/base.css" rel="stylesheet">
+    <script src="/assets/js/IncludeComponent.js"></script>
 
     <title>Lucas Ferreira</title>
 </head>
@@ -20,29 +25,25 @@
     <div data-include="section/navbar.html"></div>
 </header>
 
-<main>
-    <section>
-        <section>
-            <div>
-                <div class="reveal">
-                    <a>
-                        <img alt="Imagem do desenvolvedor Lucas com seus cachorros" width="325" src="/assets/img/lucas.png">
-                    </a>
-                </div>
-                <div class="reveal">
-                    <h2>Sobre mim</h2>
-                    <p>Meu nome é Lucas Ferreira e sou um profissional de TI com formação e experiência prática. Sou desenvolvedor Java, estudante de Sistemas de Informação e técnico em redes de computadores.
-                        Minha paixão por TI começou no ensino médio, quando aprendi os fundamentos de programação. Fora do trabalho, sou um músico nas horas vagas e toco guitarra e violão. Também sou pai do cachorro Lion,
-                        um poodle adorável que me traz muita alegria.</p>
-                    </br>
-                    <h2>Formação</h2>
-                    <p>Sou técnico em redes de computadores no SENAI (2017-2018), e atualmente estou cursando Sistemas de Informação no IFMA (2019-). Estou empolgado para ver onde essa formação em tecnologia da informação me levará.
-                        Estagiei na Jucema, onde participei de um projeto de migração de banco de dados. Atualmente, estou estagiando no Tribunal de Justiça do Estado do Maranhão, atuando como gerente de projeto júnior.</p>
-                </div>
-            </div>
-        </section>
+<main class="container text-center">
+    <section class="row align-items-start p-5">
+        <div class="reveal col">
+            <a><img alt="Imagem do desenvolvedor Lucas com seus cachorros" width="325" src="/assets/img/lucas.png"></a>
+        </div>
+        <div class="reveal col">
+            <h2>Sobre mim</h2>
+            <p>Meu nome é Lucas Ferreira e sou um profissional de TI com formação e experiência prática. Sou desenvolvedor Java, estudante de Sistemas de Informação e técnico em redes de computadores.
+            Minha paixão por TI começou no ensino médio, quando aprendi os fundamentos de programação. Fora do trabalho, sou um músico nas horas vagas e toco guitarra e violão. Também sou pai do cachorro Lion,
+            um poodle adorável que me traz muita alegria.</p>
+            </br>
+            <h2>Formação</h2>
+            <p>Sou técnico em redes de computadores no SENAI (2017-2018), e atualmente estou cursando Sistemas de Informação no IFMA (2019-). Estou empolgado para ver onde essa formação em tecnologia da informação me levará.
+            Estagiei na Jucema, onde participei de um projeto de migração de banco de dados. Atualmente, estou estagiando no Tribunal de Justiça do Estado do Maranhão, atuando como gerente de projeto júnior.</p>
+        </div>
     </section>
 </main>
+
+<div class="reveal" data-include="section/contatos.html"></div>
 
 <div class="reveal" data-include="section/footer.html"></div>
 
