@@ -23,8 +23,6 @@
     border-radius: 10px;
 }
 
-
-
 .project-info {
     padding-top: 20px;
     padding: 10px;
@@ -62,8 +60,8 @@
 }
 
 .project-type {
-    background: #b2b2fd;
-    color: #1a41cd;
+    background: #1F1F1F;
+    color: #FAC345;
     font-weight: bold;
     padding: 0.3em 0.7em;
     border-radius: 15px;
@@ -81,7 +79,9 @@
 }
 
 .container-project {
-    width: 100%;
-    height: 170px;
+    max-width: 100%;
+    max-height: 170px;
+    width: auto;
+    height: auto;
     background: gray;
 }
