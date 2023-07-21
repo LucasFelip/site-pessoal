@@ -1,9 +1,13 @@
 .card {
-    width: 6.1em;
-    height: 6.1em;
+    width: 7.5em;
+    height: 8em;
     padding: 1em;
     margin: 1em;
     background-color: #F8FBFE;
     border-radius: 8px;
     z-index: 1;
+}
+
+.card p {
+	font-size: 0.8em;
 }
