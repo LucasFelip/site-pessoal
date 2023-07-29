@@ -70,6 +70,14 @@ const cards = [
     {
         imagemLink: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg",
         nome: "C"
+    },
+    {
+        imagemLink: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg",
+        nome: "GitLab"
+    },
+    {
+        imagemLink: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg",
+        nome: "Firebase"
     }
 ];
 
