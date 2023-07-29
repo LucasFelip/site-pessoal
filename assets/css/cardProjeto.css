@@ -1,0 +1,87 @@
+.article-wrapper {
+    width: 17em;
+    margin: 1em;
+    -webkit-transition: 0.15s all ease-in-out;
+    transition: 0.15s all ease-in-out;
+    border-radius: 10px;
+    padding: 5px;
+    border: 4px solid transparent;
+    cursor: pointer;
+    background-color: white;
+}
+
+
+.types {
+    gap: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    place-content: flex-start;
+}
+
+.rounded-lg {
+    border-radius: 10px;
+}
+
+.project-info {
+    padding-top: 20px;
+    padding: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.project-title {
+    font-size: 2em;
+    margin: 0;
+    font-weight: 600;
+    /* depend de la font */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: black;
+}
+
+.flex-pr {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.project-type {
+    background: #1F1F1F;
+    color: #FAC345;
+    font-weight: bold;
+    padding: 0.3em 0.7em;
+    border-radius: 15px;
+    font-size: 12px;
+    letter-spacing: -0.6px;
+}
+
+.project-hover {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    padding: 9px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.container-project {
+    max-width: 100%;
+    max-height: 170px;
+    width: auto;
+    height: auto;
+    background: gray;
+}

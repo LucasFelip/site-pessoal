@@ -1,84 +1,67 @@
 <!DOCTYPE html>
-<html lang="pt-br" data-bs-theme="dark" xmlns="http://www.w3.org/1999/html">
+<html lang="pt-br" data-bs-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link href="/assets/img/icon-avatar.svg" rel="icon">
-    <link href="/assets/css/base.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="/assets/js/imports.js"></script>
 
     <title>Lucas Ferreira</title>
 </head>
 <body>
 <header>
-    <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-black">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="main.html">Lucas Ferreira</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a alt="Sessão principal" class="nav-item nav-link active" href="#principal">Principal</a>
-                    <a alt="Sessão projetos" class="nav-item nav-link" href="projetos.html" >Projetos</a>
-                    <a alt="Sessão habilidades" class="nav-item nav-link" href="habilidades.html">Habilidades</a>
-                    <a alt="Sessão contatos" class="nav-item nav-link" href="#contatos">Contatos</a>
-                    <a alt="Curriculo do desenvolver" class="nav-item nav-link" href="/assets/documentos/curriculos/Curriculo%20-%20Lucas%20Ferreira.pdf">Currículo</a>
-                </div>
-            </div>
-        </div>
-    </nav>
+    <div data-include="section/navbar.html"></div>
 </header>
-<main class="py-5">
-    <section alt="Sessão principal" id="principal" class="py-5 text-center text-white bg-body-tertiary">
-        <section class="container">
-            <div class="row g-1">
-                <div class="col-12 col-sm-6 p-3">
-                    <a href="https://github.com/LucasFelip/">
-                        <img alt="Imagem do desenvolvedor Lucas com seus cachorros" width="325" class="img-fluid img-thumbnail shadow-sm" src="/assets/img/lucas.png">
-                    </a>
-                </div>
-                <div class="col-12 col-sm-6 text-sm-start text-break">
-                    <h3>Sobre mim</h3>
-                    <p>Meu nome é Lucas Ferreira e sou um profissional de TI com formação e experiência prática. Sou desenvolvedor Java, estudante de Sistemas de Informação e técnico em redes de computadores.
-                        Minha paixão por TI começou no ensino médio, quando aprendi os fundamentos de programação. Fora do trabalho, sou um músico nas horas vagas e toco guitarra e violão. Também sou pai do cachorro Lion,
-                        um poodle adorável que me traz muita alegria.</p>
-                    </br>
-                    <h3>Formação</h3>
-                    <p>Sou técnico em redes de computadores no SENAI (2017-2018), e atualmente estou cursando Sistemas de Informação no IFMA (2019-). Estou empolgado para ver onde essa formação em tecnologia da informação me levará.
-                        Estagiei na Jucema, onde participei de um projeto de migração de banco de dados. Atualmente, estou estagiando no Tribunal de Justiça do Estado do Maranhão, atuando como gerente de projeto júnior.</p>
-                </div>
+
+<main class="container text-center lh-lg">
+    <section class="row justify-content-center p-5">
+        <div class="reveal col">
+            <img class="img-fluid rounded mx-auto d-block" style="width: 22em; height: 30em;" src="/assets/img/lucas.png">
+        </div>
+        <div class="reveal col">
+            <h2>Sobre mim</h2>
+            <p>Meu nome é Lucas Ferreira e sou um profissional de TI apaixonado por tecnologia e desenvolvimento. Com
+                formação acadêmica em Sistemas de Informação e experiência prática, me tornei um desenvolvedor Java
+                habilidoso, buscando sempre aprimorar minhas habilidades nessa linguagem.
+
+                Desde o ensino médio, percebi que a área de TI era minha vocação, desde então busco aprender e me atualizar constantemente.
+
+                Nesta jornada profissional e pessoal, continuo buscando novos desafios e oportunidades de crescimento,
+                sempre aberto a aprender novas tecnologias, a enfrentar projetos inovadores e a contribuir para o
+                avanço da TI.</p>
+            </br>
+        </div>
+        <div class="py-5">
+            <div class="py-3">
+                <h2>Projetos</h2>
+                <p>Aqui você encontrará uma seleção de projetos em que tive o prazer de participar ou desenvolver.
+                    Cada projeto é listado com uma breve descrição e um link para o repositório no GitHub ou para o projeto em si.
+                    Esses projetos abrangem diversas áreas e tecnologias, desde aplicações web e mobile até sistemas em redes de computadores.
+                    Sinta-se à vontade para explorar e conhecer mais sobre cada um deles!</p>
+                <a class="btn btn-warning" href="projetos.html" role="button">Ir para sessão</a>
             </div>
-        </section>
-    </section>
-    <section id="contatos" class="py-5 text-center text-white">
-        <h2>Contatos</h2>
-        <div align-items="center">
-            <a href="https://wa.me/5598988525278?text=Ol%C3%A1!%20Vim%20pelo%20seu%20site%2C%20vi%20suas%20habilidades%20e%20projetos%2C%20gostaria%20de%20conhecer%20o%20seu%20trabalho">
-                <img alt="Whatshapp" class="my-1" src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white"></a>
-            <a href="mailto:lucasfelipereis@hotmail.com">
-                <img alt="Microsoft Outlock" class="my-1" src="https://img.shields.io/badge/Microsoft_Outlook-0078D4?style=for-the-badge&logo=microsoft-outlook&logoColor=white"></a>
-            <a href="https://www.linkedin.com/in/lucas-reis-5247b1221/">
-                <img alt="Linkedin" class="my-1" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a>
-            <a href="https://github.com/LucasFelip">
-                <img alt="Github" class="my-1" src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"></a>
-            <a href="https://discord.com/channels/@luckylusca">
-                <img src="https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white"></a>
-            <a href="https://t.me/lucasFelipe">
-                <img src="https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white"></a>
+            <div class="py-3">
+                <h2>Habilidades</h2>
+                <p>Aqui você encontrará uma lista de tecnologias e
+                    recursos com as quais tive a oportunidade de trabalhar e aprimorar minhas habilidades. Essas habilidades abrangem
+                    linguagens de programação, ferramentas de desenvolvimento, frameworks e muito mais. Cada habilidade é representada
+                    por um card que contém o ícone e o nome correspondente.</p>
+                <a class="btn btn-warning" href="habilidades.html" role="button">Ir para sessão</a>
+            </div>
+            <div class="py-3">
+                <h2>Experiências</h2>
+                <p>Aqui você encontrará informações sobre minha trajetória
+                    profissional e acadêmica. Ao longo do tempo, tive a oportunidade de trabalhar em projetos e oportunidades de estágio,
+                    aprimorando minhas habilidades e conhecimentos no ambiente profissional. Cada experiência é detalhada abaixo, mostrando
+                    as instituições onde atuei, o cargo que ocupei e uma breve descrição das minhas responsabilidades e contribuições.</p>
+                <a class="btn btn-warning" href="experiencia.html" role="button">Ir para sessão</a>
+            </div>
         </div>
     </section>
 </main>
-<footer class="py-3 my-4">
-    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-        <li class="nav-item"><a href="#principal" class="nav-link px-2 text-body-secondary">Principal</a></li>
-        <li class="nav-item"><a href="habilidades.html" class="nav-link px-2 text-body-secondary">Habilidades</a></li>
-        <li class="nav-item"><a href="projetos.html" class="nav-link px-2 text-body-secondary">Projetos</a></li>
-        <li class="nav-item"><a href="#contatos" class="nav-link px-2 text-body-secondary">Contatos</a></li>
-    </ul>
-    <p class="text-center text-muted">© 2023 Lucas Ferreira</p>
-</footer>
+
+<div class="reveal" data-include="section/footerContatos.html"></div>
+
+<script src="https://unpkg.com/scrollreveal"></script>
+<script src="/assets/js/RevealItens.js"></script>
 </body>
 </html>

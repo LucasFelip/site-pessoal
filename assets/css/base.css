@@ -1,7 +1,16 @@
-body {
-    font-family: montserrat, Arial, Helvetica; !important;
+*{
+    color: #f6f4e6;
+    font-family: montserrat, Arial, Helvetica;
 }
 
-.color-bg {
-    background-color: #213C47; !important;
+body {
+    background: linear-gradient(70deg, #383838, #1F1F1F);
+}
+
+main {
+    text-align: center;
+}
+
+h2 {
+    color: #FAC345;
 }
