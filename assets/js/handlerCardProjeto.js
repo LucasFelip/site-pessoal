@@ -1,7 +1,7 @@
 const cards = [
     {
         classes: 'article-wrapper col-4 mx-2',
-        imagem: '/assets/img/curriculum.jpg',
+        imagem: 'https://images.unsplash.com/photo-1562564055-71e051d33c19?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y3VycmljdWx1bXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60',
         titulo: 'Curriculum',
         githubLink: 'https://github.com/LucasFelip/site-pessoal',
         icone: 'bi bi-arrow-right',
@@ -10,7 +10,7 @@ const cards = [
     },
     {
         classes: 'article-wrapper col-4 mx-2',
-        imagem: '/assets/img/burguer.jpg',
+        imagem: 'https://plus.unsplash.com/premium_photo-1684923610122-028894099cdd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80',
         titulo: 'Hamburger',
         githubLink: 'https://github.com/LucasFelip/API-hambugueria',
         icone: 'bi bi-arrow-right',
@@ -19,7 +19,7 @@ const cards = [
     },
     {
         classes: 'article-wrapper col-4 mx-2',
-        imagem: '/assets/img/spotify.jpg',
+        imagem: 'https://images.unsplash.com/photo-1532354058425-ba7ccc7e4a24?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8c3BvdGlmeXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60',
         titulo: 'ListMusic',
         githubLink: '#',
         icone: 'bi bi-arrow-right',
@@ -28,7 +28,7 @@ const cards = [
     },
     {
         classes: 'article-wrapper col-4 mx-2',
-        imagem: '/assets/img/sellers.jpg',
+        imagem: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80',
         titulo: 'Vendedores',
         githubLink: 'https://github.com/LucasFelip/projeto-sds3',
         icone: 'bi bi-arrow-right',
@@ -37,7 +37,7 @@ const cards = [
     },
     {
         classes: 'article-wrapper col-4 mx-2',
-        imagem: '/assets/img/recomenda_jogos.jpg',
+        imagem: 'https://images.unsplash.com/photo-1493711662062-fa541adb3fc8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80',
         titulo: 'ListJogos',
         githubLink: 'https://github.com/LucasFelip/sistemaDeRecomendacaoJogos',
         icone: 'bi bi-arrow-right',
@@ -46,7 +46,7 @@ const cards = [
     },
     {
         classes: 'article-wrapper col-4 mx-2',
-        imagem: '/assets/img/redes_computadores.jpg',
+        imagem: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=872&q=80',
         titulo: 'Redes',
         githubLink: 'https://github.com/LucasFelip/AmbienteRedesComputadores',
         icone: 'bi bi-arrow-right',
