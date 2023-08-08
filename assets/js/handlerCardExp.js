@@ -33,7 +33,7 @@ const cards = [
 
 function criarCard(card) {
     return `
-        <div class="card mb-5" style="max-width: 40rem;">
+        <div class="card m-2" style="max-width: 40rem;">
           <div class="row g-0">
             <div class="col-md-4">
               <img src="${card.imagemLink}" class="img-fluid rounded-start p-3">
