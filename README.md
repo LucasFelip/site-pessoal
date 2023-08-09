@@ -2,6 +2,7 @@
 
 Este projeto consiste em um site pessoal que funciona como um currículo web de Lucas Ferreira, desenvolvedor. O objetivo é simplificar e apresentar visualmente algumas informações relevantes sobre ele.
 
+---
 ## Estrutura do site:
 ### Principal
 Esta seção contém informações pessoais sobre Lucas Ferreira, como sua formação acadêmica, habilidades e experiência profissional.
