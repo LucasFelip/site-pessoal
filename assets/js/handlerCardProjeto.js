@@ -20,11 +20,11 @@ const cards = [
     {
         classes: 'article-wrapper col-4 mx-2',
         imagem: 'https://images.unsplash.com/photo-1532354058425-ba7ccc7e4a24?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8c3BvdGlmeXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60',
-        titulo: 'ListMusic',
+        titulo: 'Top Musics',
         githubLink: 'https://github.com/LucasFelip/spotifyiOS',
         icone: 'bi bi-arrow-right',
         descricao: 'Projeto de interface para a listagem e detalhes de dados para o usuário, dados da API do Spotify.',
-        tipos: ['Swift']
+        tipos: ['Swift', 'UIKit']
     },
     {
         classes: 'article-wrapper col-4 mx-2',
@@ -42,7 +42,7 @@ const cards = [
         githubLink: 'https://github.com/LucasFelip/sistemaDeRecomendacaoJogos',
         icone: 'bi bi-arrow-right',
         descricao: 'Sistema que recomenda jogos com base no parâmetro IMDB e com parâmetros solicitados pelo usuário.',
-        tipos: ['Python']
+        tipos: ['Python', 'Analysts']
     },
     {
         classes: 'article-wrapper col-4 mx-2',
@@ -52,6 +52,16 @@ const cards = [
         icone: 'bi bi-arrow-right',
         descricao: 'Ambiente de redes de computadores focando no desenvolvimento de rede com servidores e PC\'s.',
         tipos: ['Redes de computadores', 'Cisco']
+    }
+    ,
+    {
+        classes: 'article-wrapper col-4 mx-2',
+        imagem: 'https://images.unsplash.com/photo-1449824913935-59a10b8d2000?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHVyYmFubyUyMCU3Q3xlbnwwfDB8MHx8fDA%3D',
+        titulo: 'iMobility',
+        githubLink: 'https://github.com/LucasFelip/iMobility',
+        icone: 'bi bi-arrow-right',
+        descricao: 'Aplicativo iOS para registro de problemas em vias públicas e análise de ocorrências.',
+        tipos: ['Swift', 'SwiftUI', 'MapKIT']
     }
 ];
 

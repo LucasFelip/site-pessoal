@@ -79,6 +79,11 @@ const cards = [
         imagemLink: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg",
         nome: "Firebase"
     }
+    ,
+    {
+        imagemLink: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/xd/xd-plain.svg",
+        nome: "Adobre Xd"
+    }
 ];
 
 function criarCard(card) {
