@@ -53,7 +53,7 @@ const cards = [
     },
     {
         imagemLink: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/premierepro/premierepro-original.svg",
-        nome: "Premiere Pro"
+        nome: "Premiere"
     },
     {
         imagemLink: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",

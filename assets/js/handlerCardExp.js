@@ -14,8 +14,8 @@ const cards = [
         instituicao: 'TJMA',
         inicioMes: 'Agosto',
         inicioAno: '2022',
-        terminoMes: '',
-        terminoAno: '',
+        terminoMes: 'Novembro',
+        terminoAno: '2023',
         cargo: 'Estagiário',
         atuacao: "Atuei no sistema SAPRE do TJMA, sistema de precatórios. Ajudei no gerenciamento de demandas para melhorar organização, além de auxiliar nas análise de código e resolução de bugs"
     },
@@ -24,10 +24,20 @@ const cards = [
         instituicao: 'NNT',
         inicioMes: 'Março',
         inicioAno: '2023',
-        terminoMes: '',
-        terminoAno: '',
+        terminoMes: 'Dezembro',
+        terminoAno: '2023',
         cargo: 'Estudante',
         atuacao: 'Atuei na criação do Projeto iMobility, projeto faz parte de um grupo de projetos de inovação, do Novos Negócios em TIC do IFCE, protagonizado por estudantes do ensino médio e superior'
+    },
+    {
+        imagemLink: 'https://media.licdn.com/dms/image/D4D03AQF0xdN7Q2XS4Q/profile-displayphoto-shrink_800_800/0/1673450964826?e=2147483647&v=beta&t=ywL6nJJDaY8xzCI8Sfrorqw0_TCuyjO8rE6BrfXp4wI',
+        instituicao: 'Coreplan',
+        inicioMes: 'Novembro',
+        inicioAno: '2023',
+        terminoMes: '',
+        terminoAno: '',
+        cargo: 'Suporte de TI',
+        atuacao: 'Atuei na manutenção do Sistema de Processos Automatizados, participando diretamente com o cliente no processo de analise e uso do sistema, como a Procuradoria Geral do Estado do Maranhão'
     }
 ];
 
