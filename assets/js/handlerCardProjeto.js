@@ -21,7 +21,7 @@ const cards = [
         classes: 'article-wrapper col-4 mx-2',
         imagem: 'https://images.unsplash.com/photo-1532354058425-ba7ccc7e4a24?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8c3BvdGlmeXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60',
         titulo: 'Top Musics',
-        githubLink: 'https://github.com/LucasFelip/spotifyiOS',
+        githubLink: 'https://github.com/LucasFelip/TopMusic',
         icone: 'bi bi-arrow-right',
         descricao: 'Projeto de interface para a listagem e detalhes de dados para o usuário, dados da API do Spotify.',
         tipos: ['Swift', 'UIKit']
