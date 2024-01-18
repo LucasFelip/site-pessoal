@@ -44,7 +44,6 @@ function criarCardPDF(pdf) {
             <embed src="/assets/documentos/diplomas/${pdf.pdf}" type="application/pdf" width="100%" height="auto" class="card-img-top" />
             <div class="card-body d-flex flex-column">
                 <h5 class="card-title">${pdf.nome}</h5>
-                <p class="card-text">Este certificado é uma comprovação de conclusão e participação.</p>
                 <div class="mt-auto">
                     <a href="/assets/documentos/diplomas/${pdf.pdf}" class="btn btn-primary" target="_blank">Abrir</a>
                 </div>
