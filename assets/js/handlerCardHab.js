@@ -86,6 +86,12 @@ const cards = [
     }
 ];
 
+const categorias = {
+    Linguagem: ["Python", "Java", "Swift", "C", "Flutter"],
+    Ferramenta: ["Git", "GitHub", "GitLab", "VSCode", "IntelliJ", "Spring", "Firebase", "Xcode", "MySQL", "MongoDB", "PostgreSQL"],
+    Complementar: ["Bootstrap", "Premiere", "Figma", "Adobe XD", "Jira"]
+};
+
 function criarCard(card) {
     return `
     	<div class="card col-md-12 my-2">
@@ -95,9 +101,18 @@ function criarCard(card) {
     `;
 }
 
-const cardContainer = document.getElementById('habilidadesContainer');
+function criarCardsPorCategoria(categoria, container) {
+    const cardsCategoria = cards.filter(card => categorias[categoria].includes(card.nome));
+    cardsCategoria.forEach(card => {
+        const cardHTML = criarCard(card);
+        container.insertAdjacentHTML('beforeend', cardHTML);
+    });
+}
 
-cards.forEach(card => {
-    const cardHTML = criarCard(card);
-    cardContainer.insertAdjacentHTML('beforeend', cardHTML);
-});
+const cardContainerFerramenta = document.getElementById('ferramentaContainer');
+const cardContainerLinguagem = document.getElementById('linguagemContainer');
+const cardContainerComplementar = document.getElementById('complementarContainer');
+
+criarCardsPorCategoria('Linguagem', cardContainerLinguagem);
+criarCardsPorCategoria('Ferramenta', cardContainerFerramenta);
+criarCardsPorCategoria('Complementar', cardContainerComplementar);

@@ -37,7 +37,7 @@ const cards = [
         terminoMes: '',
         terminoAno: '',
         cargo: 'Suporte de TI',
-        atuacao: 'Atuei na manutenção do Sistema de Processos Automatizados, participando diretamente com o cliente no processo de analise e uso do sistema, como a Procuradoria Geral do Estado do Maranhão'
+        atuacao: 'Atuo na manutenção do Sistema de Processos Automatizados, participando diretamente com o cliente no processo de analise e uso do sistema, como a Procuradoria Geral do Estado do Maranhão'
     }
 ];
 
