@@ -41,14 +41,20 @@ const cards = [
         githubLink: 'https://github.com/LucasFelip/AmbienteRedesComputadores',
         descricao: 'Ambiente de redes de computadores focando no desenvolvimento de rede com servidores e PC\'s.',
         tipos: ['Redes de computadores', 'Cisco']
-    }
-    ,
+    },
     {
         imagem: 'https://images.unsplash.com/photo-1449824913935-59a10b8d2000?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHVyYmFubyUyMCU3Q3xlbnwwfDB8MHx8fDA%3D',
         titulo: 'iMobility',
         githubLink: 'https://github.com/LucasFelip/iMobility',
         descricao: 'Aplicativo iOS para registro de problemas em vias públicas e análise de ocorrências.',
         tipos: ['Swift', 'SwiftUI', 'MapKIT']
+    },
+    {
+        imagem: 'https://images.unsplash.com/37/tEREUy1vSfuSu8LzTop3_IMG_2538.jpg?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        titulo: 'Ponto Eletrônico',
+        githubLink: 'https://github.com/LucasFelip/pontoEletronico',
+        descricao: 'Sistema de ponto eletrônico para cálculo de horas extras e atrasos, com base nas horas de trabalho e na marcação',
+        tipos: ['Java', 'Spring', 'JS', 'Bootstrap']
     }
 ];
 
