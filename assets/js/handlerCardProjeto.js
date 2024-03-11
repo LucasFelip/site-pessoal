@@ -55,6 +55,13 @@ const cards = [
         githubLink: 'https://github.com/LucasFelip/pontoEletronico',
         descricao: 'Sistema de ponto eletrônico para cálculo de horas extras e atrasos, com base nas horas de trabalho e na marcação',
         tipos: ['Java', 'Spring', 'JS', 'Bootstrap']
+    },
+    {
+        imagem: 'https://images.unsplash.com/photo-1579621970795-87facc2f976d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        titulo: 'Gestão Financeira',
+        githubLink: 'https://github.com/LucasFelip/gestao',
+        descricao: 'Sistema de Gestão Financeira para controle de gastos e ganhos para cada usuário logado, para planejamento financeiro',
+        tipos: ['Java', 'Spring', 'JS', 'MySQL']
     }
 ];
 
