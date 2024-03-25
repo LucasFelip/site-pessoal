@@ -1,4 +1,4 @@
-const cards = [
+const cardsHabs = [
     {
         imagemLink: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
         nome: "Python"
@@ -78,31 +78,62 @@ const cards = [
     {
         imagemLink: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg",
         nome: "Firebase"
-    }
-    ,
+    },
     {
         imagemLink: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/xd/xd-plain.svg",
         nome: "Adobre Xd"
+    },
+    {
+        imagemLink: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/eclipse/eclipse-original.svg",
+        nome: "Eclipse"
+    },
+    {
+        imagemLink: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg",
+        nome: "AWS"
+    },
+    {
+        imagemLink: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
+        nome: "Javascript"
+    },
+    {
+        imagemLink: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/androidstudio/androidstudio-original.svg",
+        nome: "Android Studio"
+    },
+    {
+        imagemLink: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg",
+        nome: "Docker"
+    },
+    {
+        imagemLink: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/netlify/netlify-original.svg",
+        nome: "Netlify"
+    },
+    {
+        imagemLink: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg",
+        nome: "Postman"
+    },
+    {
+        imagemLink: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tomcat/tomcat-original.svg",
+        nome: "Tomcat"
     }
 ];
 
 const categorias = {
-    Linguagem: ["Python", "Java", "Swift", "C", "Flutter"],
-    Ferramenta: ["Git", "GitHub", "GitLab", "VSCode", "IntelliJ", "Spring", "Firebase", "Xcode", "MySQL", "MongoDB", "PostgreSQL"],
+    Linguagem: ["Python", "Java", "Swift", "C", "Flutter", "Javascript"],
+    Ferramenta: ["Git", "GitHub", "GitLab", "VSCode", "IntelliJ", "Spring", "Firebase", "Xcode", "MySQL", "MongoDB", "PostgreSQL", "Eclipse", "AWS", "Android Studio", "Docker", "Netlify", "Postman", "Tomcat"],
     Complementar: ["Bootstrap", "Premiere", "Figma", "Adobe XD", "Jira"]
 };
 
 function criarCard(card) {
     return `
-    	<div class="card col-md-12 my-2">
-    		<img src="${card.imagemLink}" />
-    		<p class="py-1 text-black fw-bolder">${card.nome}</p>
-		</div>
+        <div class="card col-md-1 m-2 handlerCardHab-exclusive ">
+            <img src="${card.imagemLink}" />
+            <p class="py-1 text-blank fw-bolder">${card.nome}</p>
+        </div>
     `;
 }
 
 function criarCardsPorCategoria(categoria, container) {
-    const cardsCategoria = cards.filter(card => categorias[categoria].includes(card.nome));
+    const cardsCategoria = cardsHabs.filter(card => categorias[categoria].includes(card.nome));
     cardsCategoria.forEach(card => {
         const cardHTML = criarCard(card);
         container.insertAdjacentHTML('beforeend', cardHTML);

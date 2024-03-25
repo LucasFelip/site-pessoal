@@ -5,6 +5,26 @@ function addDefaultImports() {
     includeComponentScript.src = "/assets/js/IncludeComponent.js";
     document.head.appendChild(includeComponentScript);
 
+    // handlerCardExp.js
+    const handlerCardExpScript = document.createElement("script");
+    handlerCardExpScript.src = "/assets/js/handlerCardExp.js";
+    document.head.appendChild(handlerCardExpScript);
+
+    // handlerCardHab.js
+    const handlerCardHabScript = document.createElement("script");
+    handlerCardHabScript.src = "/assets/js/handlerCardHab.js";
+    document.head.appendChild(handlerCardHabScript);
+
+    // handlerCardProjeto.js
+    const handlerCardProjetoScript = document.createElement("script");
+    handlerCardProjetoScript.src = "/assets/js/handlerCardProjeto.js";
+    document.head.appendChild(handlerCardProjetoScript);
+
+    // handlerCerts.js
+    const handlerCertsScript = document.createElement("script");
+    handlerCertsScript.src = "/assets/js/handlerCerts.js";
+    document.head.appendChild(handlerCertsScript);
+
     // Bootstrap CSS
     const bootstrapCssLink = document.createElement("link");
     bootstrapCssLink.rel = "stylesheet";
