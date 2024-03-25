@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="/assets/js/imports.js"></script>
+    <link href="/assets/css/cardProjeto.css" rel="stylesheet">
+    <link href="/assets/css/cardHab.css" rel="stylesheet">
 
     <title>Lucas Ferreira</title>
 </head>
@@ -12,63 +14,60 @@
     <div data-include="section/navbar.html"></div>
 </header>
 
-<main class="container text-center lh-lg">
-    <section class="justify-content-center p-5">
-        <div class="row mb-5">
-            <div class="reveal col-md-6 p-2">
-                <img class="img-fluid rounded mx-auto d-block" style="width: 22em; height: 30em;" src="/assets/img/lucas.png">
-            </div>
-            <div class="reveal col-md-6 p-2">
-                <h2>Sobre mim</h2>
-                <p>Meu nome é Lucas Ferreira e sou um profissional de TI apaixonado por tecnologia e desenvolvimento. Com
-                    formação acadêmica em Sistemas de Informação e experiência prática, me tornei um desenvolvedor Java
-                    habilidoso, buscando sempre aprimorar minhas habilidades nessa linguagem.
-
-                    Desde o ensino médio, percebi que a área de TI era minha vocação, desde então busco aprender e me atualizar constantemente.
-
-                    Nesta jornada profissional e pessoal, continuo buscando novos desafios e oportunidades de crescimento,
-                    sempre aberto a aprender novas tecnologias, a enfrentar projetos inovadores e a contribuir para o
-                    avanço da TI.</p>
-                </br>
-            </div>
+<main class="container-xxl text-center lh-lg">
+    <section id="principal" class="row mb-5 py-3">
+        <div class="reveal col-md-6 p-2">
+            <img class="img-fluid rounded mx-auto d-block" style="width: 22em; height: 30em;" src="/assets/img/lucas.png">
         </div>
+        <div class="reveal col-md-6 p-2">
+            <h2>Sobre mim</h2>
+            <p>Meu nome é Lucas Ferreira e sou um profissional de TI apaixonado por tecnologia e desenvolvimento. Com
+                formação acadêmica em Sistemas de Informação e experiência prática, me tornei um desenvolvedor Java
+                habilidoso, buscando sempre aprimorar minhas habilidades nessa linguagem.
 
-        <div class="border-top">
-            <div class="py-4 reveal">
-                <h2>Projetos</h2>
-                <p>Nesta seção, apresento alguns dos projetos em que tive o prazer de participar ou desenvolver.
-                    Cada projeto é listado com uma breve descrição e um link para o repositório no GitHub ou para o projeto em si.
-                    Esses projetos abrangem diversas áreas e tecnologias, desde aplicações web e mobile até sistemas em redes de computadores.
-                    Sinta-se à vontade para explorar e conhecer mais sobre cada um deles!</p>
-                <a class="btn btn-warning" href="projetos.html" role="button">Ir para sessão</a>
-            </div>
-            <div class="py-4 reveal">
-                <h2>Habilidades</h2>
-                <p>Nesta seção, apresento uma lista de tecnologias e recursos com as quais tive a oportunidade de trabalhar e aprimorar
-                    minhas habilidades. Essas habilidades abrangem linguagens de programação, ferramentas de desenvolvimento, frameworks
-                    e muito mais. Cada habilidade é representada por um card que contém o ícone e o nome correspondente.</p>
-                <a class="btn btn-warning" href="habilidades.html" role="button">Ir para sessão</a>
-            </div>
-            <div class="py-4 reveal">
-                <h2>Experiências</h2>
-                <p>Nesta seção, apresento as informações sobre minha trajetória profissional e acadêmica. Ao longo do tempo, tive a oportunidade
-                    de trabalhar em projetos e oportunidades de estágio, aprimorando minhas habilidades e conhecimentos no ambiente profissional.
-                    Cada experiência é detalhada abaixo, mostrando as instituições onde atuei, o cargo que ocupei e uma breve descrição das minhas
-                    responsabilidades e contribuições.</p>
-                <a class="btn btn-warning" href="experiencia.html" role="button">Ir para sessão</a>
-            </div>
-            <div class="py-4 reveal">
-                <h2>Certificações</h2>
-                <p>Nesta seção, apresento minhas certificações que são testemunho do meu comprometimento e dedicação ao aprimoramento contínuo
-                    no campo da Tecnologia da Informação. Estas certificações refletem não apenas o conhecimento técnico adquirido, mas também
-                    a minha disposição em manter-me atualizado com as últimas tendências e práticas do setor. </p>
-                <a class="btn btn-warning" href="certificacoes.html" role="button">Ir para sessão</a>
-            </div>
+                Desde o ensino médio, percebi que a área de TI era minha vocação, desde então busco aprender e me atualizar constantemente.
+
+                Nesta jornada profissional e pessoal, continuo buscando novos desafios e oportunidades de crescimento,
+                sempre aberto a aprender novas tecnologias, a enfrentar projetos inovadores e a contribuir para o
+                avanço da TI.</p>
+            </br>
         </div>
     </section>
-</main>
 
-<div class="reveal" data-include="section/footerContatos.html"></div>
+    <section class="border-top">
+        <div id="experiencias" class="py-4 reveal">
+            <h2>Experiências</h2>
+            <p class="reveal text-muted py-2">Bem-vindo à seção de Experiências! Aqui você encontrará experiências profissionais e que tive
+                a oportunidade de trabalhar e desenvolver minhas habilidades no ambiente profissional.</p>
+            <div class="row justify-content-center reveal py-2" id="experienciaContainer"></div>
+        </div>
+
+        <div id="habilidades" class="py-4 reveal">
+            <h2>Habilidades</h2>
+            <p class="reveal text-muted py-2">Bem-vindo à seção de Habilidades! Aqui você encontrará recursos e tecnologias com as
+                quais tive a oportunidade de trabalhar e desenvolver minhas habilidades.</p>
+            <div class="row justify-content-center reveal py-2" id="ferramentaContainer"></div>
+            <div class="row justify-content-center reveal py-2" id="linguagemContainer"></div>
+            <div class="row justify-content-center reveal py-2" id="complementarContainer"></div>
+        </div>
+
+        <div id="projetos" class="py-4 reveal">
+            <h2>Projetos</h2>
+            <p class="text-muted py-2">Bem-vindo à seção de Projetos! Aqui você encontrará uma seleção de projetos em que tive o prazer de participar ou
+                desenvolver. Cada projeto é listado com uma breve descrição e com um link para o mesmo no GitHub, para mostrar mais detalhes.</p>
+            <div class="row justify-content-center reveal py-5" id="projetosContainer"></div>
+        </div>
+
+        <div id="certificacoes" class="py-4 reveal">
+            <h2>Certificações</h2>
+            <p class="reveal text-muted py-2">Bem-vindo à seção de Certificações! Aqui você encontrará as certificações dos cursos
+                e projetos que participei e concluir.</p>
+            <div class="row justify-content-center reveal py-5" id="certificadosContainer"></div>
+        </div>
+    </section>
+
+    <div class="reveal" data-include="section/footerContatos.html"></div>
+</main>
 
 <script src="https://unpkg.com/scrollreveal"></script>
 <script src="/assets/js/RevealItens.js"></script>
