@@ -1,6 +1,6 @@
-.card {
-    width: 7.5em;
-    height: 8em;
+.handlerCardHab-exclusive .card {
+    width: 1.5em;
+    height: 2em;
     padding: 1em;
     margin: 1em;
     background-color: #F8FBFE;
@@ -8,6 +8,11 @@
     z-index: 1;
 }
 
-.card p {
+.handlerCardHab-exclusive img {
+    padding: 0.5em;
+    margin: 0.5em;
+}
+
+.handlerCardHab-exclusive .card p {
 	font-size: 0.8em;
 }

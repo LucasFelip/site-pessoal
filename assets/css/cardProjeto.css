@@ -10,7 +10,6 @@
     background-color: white;
 }
 
-
 .types {
     gap: 10px;
     display: -webkit-box;
@@ -40,7 +39,6 @@
     font-size: 2em;
     margin: 0;
     font-weight: 600;
-    /* depend de la font */
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
