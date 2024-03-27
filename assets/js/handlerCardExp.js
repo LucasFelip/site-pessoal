@@ -43,10 +43,10 @@ const cards = [
 
 function criarCard(card) {
     return `
-        <div class="card m-2" style="max-width: 40rem;">
+        <div class="card m-2" style="max-width: 40rem; margin-left: auto; margin-right: auto; width: calc(100% - 40px);">
           <div class="row g-0">
             <div class="col-md-4">
-              <img src="${card.imagemLink}" class="img-fluid rounded-start p-3">
+              <img src="${card.imagemLink}" class="img-fluid rounded-start p-3" style="width: 12em; height: 12em;">
             </div>
             <div class="col-md-8">
               <div class="card-body">
