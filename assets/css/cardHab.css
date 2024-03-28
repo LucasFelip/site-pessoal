@@ -1,14 +1,15 @@
 .handlerCardHab-exclusive .card {
     width: 1.5em;
-    height: 2em;
+    height: 5em;
     padding: 1em;
-    margin: 1em;
+    margin: 2em;
     background-color: #F8FBFE;
     border-radius: 8px;
     z-index: 1;
 }
 
 .handlerCardHab-exclusive img {
+    width: auto;
     padding: 0.5em;
     margin: 0.5em;
 }

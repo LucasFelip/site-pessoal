@@ -125,7 +125,7 @@ const categorias = {
 
 function criarCard(card) {
     return `
-        <div class="card col-md-1 m-2 handlerCardHab-exclusive ">
+        <div class="card col-3 col-md-2 col-lg-1 m-1 handlerCardHab-exclusive ">
             <img src="${card.imagemLink}" />
             <p class="py-1 text-blank fw-bolder">${card.nome}</p>
         </div>
