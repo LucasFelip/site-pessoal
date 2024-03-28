@@ -21,7 +21,7 @@ const listaDePDFs = [
     },
     {
         pdf: "Organização de Equipes ageis__os papeis existentes em uma equipe.pdf",
-        nome: "Organização de Equipes ágeis - os papeis existentes em uma equipe"
+        nome: "Organização de Equipes ágeis"
     },
     {
         pdf: "Project_Development_Using_JAVA_for_Beginners.pdf",
@@ -39,9 +39,9 @@ const listaDePDFs = [
 
 function criarCardPDF(pdf) {
     return `
-    <div class="col-lg-4 col-md-6 col-12 mb-4">
-        <div class="card h-100">
-            <embed src="/assets/documentos/diplomas/${pdf.pdf}" type="application/pdf" width="100%" height="auto" class="card-img-top" />
+    <div class="col-4 col-sm-6 col-12 mb-3 d-flex justify-content-center">
+        <div class="card" style="width:23em;">
+            <embed src="/assets/documentos/diplomas/${pdf.pdf}" type="application/pdf" style="width:23em; height:auto;" class="card-img-top" />
             <div class="card-body d-flex flex-column">
                 <h5 class="card-title">${pdf.nome}</h5>
                 <div class="mt-auto">
