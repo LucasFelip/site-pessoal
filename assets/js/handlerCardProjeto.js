@@ -67,7 +67,7 @@ const cardsProjets = [
 
 function criarCard(card) {
     return `
-    <article class="article-wrapper col-4 mx-2">
+    <article class="article-wrapper col-3 col-md-2 col-lg-1  m-1">
       <img class="rounded-lg container-project" src="${card.imagem}">
       <div class="project-info">
         <div class="flex-pr">
