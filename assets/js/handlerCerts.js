@@ -41,7 +41,6 @@ function criarCardPDF(pdf) {
     return `
     <div class="col-4 col-sm-6 col-12 mb-3 d-flex justify-content-center">
         <div class="card" style="width:23em;">
-            <embed src="/assets/documentos/diplomas/${pdf.pdf}" type="application/pdf" style="width:23em; height:auto;" class="card-img-top" />
             <div class="card-body d-flex flex-column">
                 <h5 class="card-title">${pdf.nome}</h5>
                 <div class="mt-auto">
