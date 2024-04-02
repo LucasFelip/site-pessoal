@@ -1,8 +1,8 @@
 .handlerCardHab-exclusive .card {
-    width: 1.5em;
-    height: 5em;
+    width: 1em;
+    height: 1em;
     padding: 1em;
-    margin: 2em;
+    margin: 1em;
     background-color: #F8FBFE;
     border-radius: 8px;
     z-index: 1;
