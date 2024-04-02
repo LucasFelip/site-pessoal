@@ -117,12 +117,6 @@ const cardsHabs = [
     }
 ];
 
-const categorias = {
-    Linguagem: ["Python", "Java", "Swift", "C", "Flutter", "Javascript"],
-    Ferramenta: ["Git", "GitHub", "GitLab", "VSCode", "IntelliJ", "Spring", "Firebase", "Xcode", "MySQL", "MongoDB", "PostgreSQL", "Eclipse", "AWS", "Android Studio", "Docker", "Netlify", "Postman", "Tomcat"],
-    Complementar: ["Bootstrap", "Premiere", "Figma", "Adobe XD", "Jira"]
-};
-
 function criarCard(card) {
     return `
         <div class="card col-2 col-md-2 col-lg-1 m-1 handlerCardHab-exclusive ">
@@ -132,18 +126,9 @@ function criarCard(card) {
     `;
 }
 
-function criarCardsPorCategoria(categoria, container) {
-    const cardsCategoria = cardsHabs.filter(card => categorias[categoria].includes(card.nome));
-    cardsCategoria.forEach(card => {
-        const cardHTML = criarCard(card);
-        container.insertAdjacentHTML('beforeend', cardHTML);
-    });
-}
+const cardHabContainer = document.getElementById('habilidadesContainer');
 
-const cardContainerFerramenta = document.getElementById('ferramentaContainer');
-const cardContainerLinguagem = document.getElementById('linguagemContainer');
-const cardContainerComplementar = document.getElementById('complementarContainer');
-
-criarCardsPorCategoria('Linguagem', cardContainerLinguagem);
-criarCardsPorCategoria('Ferramenta', cardContainerFerramenta);
-criarCardsPorCategoria('Complementar', cardContainerComplementar);
+cardsHabs.forEach(cardsHabs => {
+    const cardHTML = criarCard(cardsHabs);
+    cardHabContainer.insertAdjacentHTML('beforeend', cardHTML)
+})
