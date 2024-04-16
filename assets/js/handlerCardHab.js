@@ -60,10 +60,6 @@ const cardsHabs = [
         nome: "MongoDB"
     },
     {
-        imagemLink: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
-        nome: "PostgreSQL"
-    },
-    {
         imagemLink: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg",
         nome: "Figma"
     },
@@ -96,10 +92,6 @@ const cardsHabs = [
         nome: "Javascript"
     },
     {
-        imagemLink: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/androidstudio/androidstudio-original.svg",
-        nome: "Android Studio"
-    },
-    {
         imagemLink: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg",
         nome: "Docker"
     },
@@ -119,9 +111,9 @@ const cardsHabs = [
 
 function criarCard(card) {
     return `
-        <div class="card col-2 col-md-2 col-lg-1 m-1 handlerCardHab-exclusive ">
-            <img src="${card.imagemLink}" />
-            <p class="py-1 text-blank fw-bolder">${card.nome}</p>
+        <div class="card col-2 col-sm-1 m-1 handlerCardHab-exclusive ">
+            <img class="" src="${card.imagemLink}" />
+            <p class="text-blank fw-bolder">${card.nome}</p>
         </div>
     `;
 }

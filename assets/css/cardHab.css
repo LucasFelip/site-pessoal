@@ -1,8 +1,7 @@
+/* Estilos padrão para .card e .img */
 .handlerCardHab-exclusive .card {
-    width: 1em;
-    height: 1em;
-    padding: 1em;
-    margin: 1em;
+    padding: 0.6em;
+    margin: 0.6em;
     background-color: #F8FBFE;
     border-radius: 8px;
     z-index: 1;
@@ -15,5 +14,22 @@
 }
 
 .handlerCardHab-exclusive .card p {
-	font-size: 0.8em;
+    font-size: 0.1em;
+}
+
+/* Media query para resolução menor que 1280x720 */
+@media (max-width: 1280px) {
+    .handlerCardHab-exclusive .card p {
+        visibility: hidden; /* Oculta o texto */
+        opacity: 0; /* Torna o texto transparente */
+        height: 0; /* Reduz a altura do elemento a zero */
+        overflow: hidden; /* Oculta qualquer conteúdo que possa sobressair */
+    }
+
+    .handlerCardHab-exclusive img {
+        width: 100%; /* Ajusta a largura da imagem para preencher a largura do container */
+        height: auto; /* Mantém a proporção da imagem */
+        margin: 0; /* Remove a margem da imagem */
+        padding: 0; /* Remove o padding da imagem */
+    }
 }
