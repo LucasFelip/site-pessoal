@@ -8,28 +8,26 @@
 }
 
 .handlerCardHab-exclusive img {
-    width: auto;
-    padding: 0.5em;
-    margin: 0.5em;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
 .handlerCardHab-exclusive .card p {
-    font-size: 0.1em;
+    font-size: 1em;
 }
 
-/* Media query para resolução menor que 1280x720 */
-@media (max-width: 1280px) {
-    .handlerCardHab-exclusive .card p {
-        visibility: hidden; /* Oculta o texto */
-        opacity: 0; /* Torna o texto transparente */
-        height: 0; /* Reduz a altura do elemento a zero */
-        overflow: hidden; /* Oculta qualquer conteúdo que possa sobressair */
-    }
-
+/* Media query para resolução entre 768px e 1024px (Tablets e iPads) */
+@media (min-width: 768px) and (max-width: 1023px) {
     .handlerCardHab-exclusive img {
-        width: 100%; /* Ajusta a largura da imagem para preencher a largura do container */
-        height: auto; /* Mantém a proporção da imagem */
-        margin: 0; /* Remove a margem da imagem */
-        padding: 0; /* Remove o padding da imagem */
+        max-width: 80%;
+    }
+}
+
+/* Media query para resolução menor que 768px (exemplo de tela de celular) */
+@media (max-width: 767px) {
+    .handlerCardHab-exclusive img {
+        max-width: 90%;
     }
 }

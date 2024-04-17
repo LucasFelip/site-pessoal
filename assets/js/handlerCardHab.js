@@ -111,8 +111,8 @@ const cardsHabs = [
 
 function criarCard(card) {
     return `
-        <div class="card col-2 col-sm-1 m-1 handlerCardHab-exclusive ">
-            <img class="" src="${card.imagemLink}" />
+        <div class="card col-3 col-sm-1 m-1 handlerCardHab-exclusive">
+            <img src="${card.imagemLink}" />
             <p class="text-blank fw-bolder">${card.nome}</p>
         </div>
     `;
@@ -122,5 +122,30 @@ const cardHabContainer = document.getElementById('habilidadesContainer');
 
 cardsHabs.forEach(cardsHabs => {
     const cardHTML = criarCard(cardsHabs);
-    cardHabContainer.insertAdjacentHTML('beforeend', cardHTML)
-})
+    cardHabContainer.insertAdjacentHTML('beforeend', cardHTML);
+});
+
+function adjustResponsiveness() {
+    const windowWidth = window.innerWidth;
+    const cards = document.querySelectorAll('.handlerCardHab-exclusive .card');
+
+    cards.forEach(card => {
+        const img = card.querySelector('img');
+        const p = card.querySelector('p');
+
+        img.classList.remove('img-responsive');
+        p.classList.remove('hidden');
+
+        // Adiciona classes com base na largura da tela
+        if (windowWidth < 768) {
+            img.classList.add('img-responsive');
+            p.classList.add('hidden');
+        } else if (windowWidth < 1024) {
+            img.classList.add('img-responsive');
+        }
+    });
+}
+
+adjustResponsiveness();
+
+window.addEventListener('resize', adjustResponsiveness);
