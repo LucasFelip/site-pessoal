@@ -20,7 +20,7 @@ const cards = [
         atuacao: "Atuei no sistema SAPRE do TJMA, sistema de precatórios. Ajudei no gerenciamento de demandas para melhorar organização, além de auxiliar nas análise de código e resolução de bugs"
     },
     {
-        imagemLink: 'https://media.licdn.com/dms/image/C4D0BAQHWKVQwjoGb0g/company-logo_200_200/0/1676036117278/novosnegciostic_logo?e=1714003200&v=beta&t=uW3b6wdyNzW7EhlsfTfP57bLEzGlZReoSkEUfKefQqo',
+        imagemLink: 'https://media.licdn.com/dms/image/C4D0BAQHWKVQwjoGb0g/company-logo_200_200/0/1676036117278/novosnegciostic_logo?e=1729123200&v=beta&t=JSdK9Bfyfi4DB1bG5-sq8Sh94WFTYDca1KhQ4iT-eXw',
         instituicao: 'NNT',
         inicioMes: 'Março',
         inicioAno: '2023',
