@@ -20,7 +20,7 @@ const cards = [
         atuacao: "Atuei no sistema SAPRE do TJMA, sistema de precatórios. Ajudei no gerenciamento de demandas para melhorar organização, além de auxiliar nas análise de código e resolução de bugs"
     },
     {
-        imagemLink: 'https://media.licdn.com/dms/image/C4D0BAQHWKVQwjoGb0g/company-logo_200_200/0/1676036117278/novosnegciostic_logo?e=1714003200&v=beta&t=uW3b6wdyNzW7EhlsfTfP57bLEzGlZReoSkEUfKefQqo',
+        imagemLink: 'https://media.licdn.com/dms/image/C4D0BAQHWKVQwjoGb0g/company-logo_200_200/0/1676036117278/novosnegciostic_logo?e=1729123200&v=beta&t=JSdK9Bfyfi4DB1bG5-sq8Sh94WFTYDca1KhQ4iT-eXw',
         instituicao: 'NNT',
         inicioMes: 'Março',
         inicioAno: '2023',
@@ -43,10 +43,10 @@ const cards = [
 
 function criarCard(card) {
     return `
-        <div class="card m-2" style="max-width: 40rem;">
+        <div class="card m-2" style="max-width: 40rem; margin-left: auto; margin-right: auto; width: calc(100% - 40px);">
           <div class="row g-0">
             <div class="col-md-4">
-              <img src="${card.imagemLink}" class="img-fluid rounded-start p-3">
+              <img src="${card.imagemLink}" class="img-fluid rounded-start p-3" style="width: 12em; height: 12em;">
             </div>
             <div class="col-md-8">
               <div class="card-body">

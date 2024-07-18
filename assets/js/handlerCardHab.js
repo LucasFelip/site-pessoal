@@ -60,10 +60,6 @@ const cardsHabs = [
         nome: "MongoDB"
     },
     {
-        imagemLink: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
-        nome: "PostgreSQL"
-    },
-    {
         imagemLink: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg",
         nome: "Figma"
     },
@@ -96,10 +92,6 @@ const cardsHabs = [
         nome: "Javascript"
     },
     {
-        imagemLink: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/androidstudio/androidstudio-original.svg",
-        nome: "Android Studio"
-    },
-    {
         imagemLink: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg",
         nome: "Docker"
     },
@@ -117,33 +109,43 @@ const cardsHabs = [
     }
 ];
 
-const categorias = {
-    Linguagem: ["Python", "Java", "Swift", "C", "Flutter", "Javascript"],
-    Ferramenta: ["Git", "GitHub", "GitLab", "VSCode", "IntelliJ", "Spring", "Firebase", "Xcode", "MySQL", "MongoDB", "PostgreSQL", "Eclipse", "AWS", "Android Studio", "Docker", "Netlify", "Postman", "Tomcat"],
-    Complementar: ["Bootstrap", "Premiere", "Figma", "Adobe XD", "Jira"]
-};
-
 function criarCard(card) {
     return `
-        <div class="card col-md-1 m-2 handlerCardHab-exclusive ">
+        <div class="card col-3 col-sm-1 m-1 handlerCardHab-exclusive">
             <img src="${card.imagemLink}" />
-            <p class="py-1 text-blank fw-bolder">${card.nome}</p>
+            <p class="text-blank fw-bolder">${card.nome}</p>
         </div>
     `;
 }
 
-function criarCardsPorCategoria(categoria, container) {
-    const cardsCategoria = cardsHabs.filter(card => categorias[categoria].includes(card.nome));
-    cardsCategoria.forEach(card => {
-        const cardHTML = criarCard(card);
-        container.insertAdjacentHTML('beforeend', cardHTML);
+const cardHabContainer = document.getElementById('habilidadesContainer');
+
+cardsHabs.forEach(cardsHabs => {
+    const cardHTML = criarCard(cardsHabs);
+    cardHabContainer.insertAdjacentHTML('beforeend', cardHTML);
+});
+
+function adjustResponsiveness() {
+    const windowWidth = window.innerWidth;
+    const cards = document.querySelectorAll('.handlerCardHab-exclusive .card');
+
+    cards.forEach(card => {
+        const img = card.querySelector('img');
+        const p = card.querySelector('p');
+
+        img.classList.remove('img-responsive');
+        p.classList.remove('hidden');
+
+        // Adiciona classes com base na largura da tela
+        if (windowWidth < 768) {
+            img.classList.add('img-responsive');
+            p.classList.add('hidden');
+        } else if (windowWidth < 1024) {
+            img.classList.add('img-responsive');
+        }
     });
 }
 
-const cardContainerFerramenta = document.getElementById('ferramentaContainer');
-const cardContainerLinguagem = document.getElementById('linguagemContainer');
-const cardContainerComplementar = document.getElementById('complementarContainer');
+adjustResponsiveness();
 
-criarCardsPorCategoria('Linguagem', cardContainerLinguagem);
-criarCardsPorCategoria('Ferramenta', cardContainerFerramenta);
-criarCardsPorCategoria('Complementar', cardContainerComplementar);
+window.addEventListener('resize', adjustResponsiveness);

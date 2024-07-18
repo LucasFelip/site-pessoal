@@ -20,11 +20,6 @@ function addDefaultImports() {
     handlerCardProjetoScript.src = "/assets/js/handlerCardProjeto.js";
     document.head.appendChild(handlerCardProjetoScript);
 
-    // handlerCerts.js
-    const handlerCertsScript = document.createElement("script");
-    handlerCertsScript.src = "/assets/js/handlerCerts.js";
-    document.head.appendChild(handlerCertsScript);
-
     // Bootstrap CSS
     const bootstrapCssLink = document.createElement("link");
     bootstrapCssLink.rel = "stylesheet";
