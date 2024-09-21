@@ -1,8 +1,6 @@
-*{
-    color: #f6f4e6;
-    font-family: montserrat, Arial, Helvetica;
+main {
+    font-family: 'Poppins', Arial, Helvetica;
 }
-
 body {
     background: linear-gradient(70deg, #383838, #1F1F1F);
 }

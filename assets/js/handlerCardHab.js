@@ -113,7 +113,6 @@ function criarCard(card) {
     return `
         <div class="card col-3 col-sm-1 m-1 handlerCardHab-exclusive">
             <img src="${card.imagemLink}" />
-            <p class="text-blank fw-bolder">${card.nome}</p>
         </div>
     `;
 }

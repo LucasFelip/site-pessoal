@@ -20,16 +20,6 @@ const cards = [
         atuacao: "Atuei no sistema SAPRE do TJMA, sistema de precatórios. Ajudei no gerenciamento de demandas para melhorar organização, além de auxiliar nas análise de código e resolução de bugs"
     },
     {
-        imagemLink: 'https://media.licdn.com/dms/image/C4D0BAQHWKVQwjoGb0g/company-logo_200_200/0/1676036117278/novosnegciostic_logo?e=1729123200&v=beta&t=JSdK9Bfyfi4DB1bG5-sq8Sh94WFTYDca1KhQ4iT-eXw',
-        instituicao: 'NNT',
-        inicioMes: 'Março',
-        inicioAno: '2023',
-        terminoMes: 'Dezembro',
-        terminoAno: '2023',
-        cargo: 'Estudante',
-        atuacao: 'Atuei na criação do Projeto iMobility, projeto faz parte de um grupo de projetos de inovação, do Novos Negócios em TIC do IFCE, protagonizado por estudantes do ensino médio e superior'
-    },
-    {
         imagemLink: 'https://media.licdn.com/dms/image/D4D03AQF0xdN7Q2XS4Q/profile-displayphoto-shrink_800_800/0/1673450964826?e=2147483647&v=beta&t=ywL6nJJDaY8xzCI8Sfrorqw0_TCuyjO8rE6BrfXp4wI',
         instituicao: 'Coreplan',
         inicioMes: 'Novembro',
@@ -44,11 +34,7 @@ const cards = [
 function criarCard(card) {
     return `
         <div class="card m-2" style="max-width: 40rem; margin-left: auto; margin-right: auto; width: calc(100% - 40px);">
-          <div class="row g-0">
-            <div class="col-md-4">
-              <img src="${card.imagemLink}" class="img-fluid rounded-start p-3" style="width: 12em; height: 12em;">
-            </div>
-            <div class="col-md-8">
+          <div class="col-md-12">
               <div class="card-body">
                 <h5 class="card-title">${card.instituicao} - ${card.cargo}</h5>
                 <p class="card-text">${card.atuacao}</p>
@@ -58,7 +44,6 @@ function criarCard(card) {
                 </div>
               </div>
             </div>
-          </div>
         </div>
     `;
 }
