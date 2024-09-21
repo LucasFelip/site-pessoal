@@ -1,3 +1,6 @@
+*{
+    font-family: 'Plus Jakarta Sans', Arial, Helvetica;
+}
 
 .navbar a {
     color: #f6f4e6;
@@ -5,6 +8,7 @@
     transition: all 0.2s ease-in-out;
 }
 
-.navbar a:hover {
-    color: #FAC345;
+
+.navbar {
+    color: #222222;
 }
