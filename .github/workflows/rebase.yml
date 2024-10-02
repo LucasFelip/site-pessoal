@@ -1,4 +1,4 @@
-name: Update desenv after merging PR to prod
+name: Rebase desenv to prod after PR merge
 on:
   pull_request:
     branches:
@@ -7,7 +7,7 @@ on:
       - closed
 
 jobs:
-  update-desenv:
+  rebase:
     if: github.event.pull_request.merged == true && github.event.pull_request.base.ref == 'prod' && github.event.pull_request.head.ref == 'desenv'
     runs-on: ubuntu-latest
 
@@ -15,24 +15,25 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Fetch branches
+      - name: Fetch all branches
         run: git fetch origin
 
       - name: Checkout desenv branch
         run: git checkout desenv
 
-      - name: Merge prod into desenv
+      - name: Rebase desenv to prod
         run: |
-          git merge origin/prod || (
-            echo "Merge failed. Please resolve conflicts manually."
+          git rebase origin/prod || (
+            git rebase --abort
+            echo "Rebase failed. Please resolve conflicts manually."
             exit 1
           )
 
-      - name: Push updated desenv branch
+      - name: Push rebased desenv branch
         if: success()
-        run: git push origin desenv
+        run: git push origin desenv --force-with-lease
 
-      - name: Notify merge failure
+      - name: Notify rebase failure
         if: failure()
         uses: actions/github-script@v6
         with:
@@ -41,7 +42,7 @@ jobs:
             github.rest.issues.create({
               owner,
               repo,
-              title: "Merge prod into desenv failed",
-              body: "The merge of `prod` into `desenv` has failed due to conflicts. Please resolve the conflicts manually.",
-              labels: ["merge", "failure"]
+              title: "Rebase desenv to prod failed",
+              body: "The rebase of `desenv` onto `prod` has failed due to conflicts. Please resolve the conflicts manually.",
+              labels: ["rebase", "failure"]
             });
