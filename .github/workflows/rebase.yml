@@ -1,30 +1,46 @@
 name: Rebase desenv to prod
 on:
   pull_request:
+    branches:
+      - prod
     types:
       - closed
 
 jobs:
   rebase:
+    if: github.event.pull_request.merged == true && github.event.pull_request.base.ref == 'prod' && github.event.pull_request.head.ref == 'desenv'
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
 
       - name: Fetch branches
-        run: git fetch origin desenv
+        run: git fetch origin
 
       - name: Rebase desenv to prod
         run: |
-          git rebase origin/prod desenv || (
+          git checkout desenv
+          git rebase origin/prod || (
             git rebase --abort  # Abortar rebase em caso de falha
             echo "Rebase failed. Please resolve conflicts and try again."
             exit 1
           )
 
       - name: Push rebased branch
-        run: |
-          git push origin desenv --force-with-lease  # Forçar push seguro
+        if: success()
+        run: git push origin desenv --force-with-lease
 
-      - name: Clean up
-        run: git rebase --abort
+      - name: Notify rebase failure
+        if: failure()
+        uses: actions/github-script@v6
+        with:
+          script: |
+            github.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: "Rebase desenv to prod failed",
+              body: "The rebase of `desenv` onto `prod` has failed due to conflicts. Please resolve the conflicts manually.",
+              labels: ["rebase", "failure"]
+            })
+
