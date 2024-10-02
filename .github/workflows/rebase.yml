@@ -1,0 +1,30 @@
+name: Rebase desenv to prod
+on:
+  pull_request:
+    types:
+      - closed
+
+jobs:
+  rebase:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Fetch branches
+        run: git fetch origin desenv
+
+      - name: Rebase desenv to prod
+        run: |
+          git rebase origin/prod desenv || (
+            git rebase --abort  # Abortar rebase em caso de falha
+            echo "Rebase failed. Please resolve conflicts and try again."
+            exit 1
+          )
+
+      - name: Push rebased branch
+        run: |
+          git push origin desenv --force-with-lease  # Forçar push seguro
+
+      - name: Clean up
+        run: git rebase --abort
