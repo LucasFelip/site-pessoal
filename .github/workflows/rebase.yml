@@ -24,9 +24,14 @@ jobs:
       - name: Rebase desenv to prod
         run: |
           git rebase origin/prod || (
-            git rebase --abort
-            echo "Rebase failed. Please resolve conflicts manually."
-            exit 1
+            echo "Attempting to resolve conflicts automatically."
+            git checkout --theirs .github/workflows/rebase.yml
+            git add .github/workflows/rebase.yml
+            git rebase --continue || (
+              git rebase --abort
+              echo "Rebase failed. Please resolve conflicts manually."
+              exit 1
+            )
           )
 
       - name: Push rebased desenv branch
