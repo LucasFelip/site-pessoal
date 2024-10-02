@@ -36,11 +36,11 @@ jobs:
         uses: actions/github-script@v6
         with:
           script: |
-            github.issues.create({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
+            const { owner, repo } = context.repo;
+            github.rest.issues.create({
+              owner,
+              repo,
               title: "Rebase desenv to prod failed",
               body: "The rebase of `desenv` onto `prod` has failed due to conflicts. Please resolve the conflicts manually.",
               labels: ["rebase", "failure"]
-            })
-
+            });
