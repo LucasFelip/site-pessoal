@@ -8,26 +8,8 @@
 }
 
 .handlerCardHab-exclusive img {
-    max-width: 100%;
+    max-width: 60px; /* Define um tamanho máximo padrão */
     height: auto;
     display: block;
     margin: 0 auto;
-}
-
-.handlerCardHab-exclusive .card p {
-    font-size: 1em;
-}
-
-/* Media query para resolução entre 768px e 1024px (Tablets e iPads) */
-@media (min-width: 768px) and (max-width: 1023px) {
-    .handlerCardHab-exclusive img {
-        max-width: 80%;
-    }
-}
-
-/* Media query para resolução menor que 768px (exemplo de tela de celular) */
-@media (max-width: 767px) {
-    .handlerCardHab-exclusive img {
-        max-width: 90%;
-    }
 }
