@@ -1,14 +1,132 @@
-main {
-    font-family: 'Poppins', Arial, Helvetica;
-}
+/* Estilos gerais */
 body {
     background: linear-gradient(70deg, #383838, #1F1F1F);
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
 }
 
 main {
     text-align: center;
+    padding: 0 1.5rem;
 }
 
 h2 {
     color: #FAC345;
+    font-size: 2em;
+    margin-bottom: 1rem;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+h2:hover {
+    color: #ffdd57;
+}
+
+h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #FAC345;
+    margin: 8px auto 16px;
+    border-radius: 2px;
+}
+
+/* Perfil Principal */
+.profile-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Informações de perfil */
+.profile-info {
+    text-align: left;
+    margin-right: -30px; /* Ajuste o valor conforme necessário para alinhar mais à esquerda */
+}
+
+.name {
+    font-size: 2.2em;
+    font-weight: bold;
+    color: #FAC345;
+    margin: 0;
+}
+
+.position {
+    font-size: 1.2em;
+    color: #ffdd57;
+    font-style: italic;
+    margin-top: 5px;
+}
+
+/* Imagem de perfil com fundo transparente */
+.profile-image img {
+    width: 250px;
+    height: auto;
+    filter: grayscale(20%); /* Ajuste para um tom acinzentado */
+}
+
+#sobre-texto {
+    color: #cccccc;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin: 20px auto;
+    max-width: 700px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    #sobre-texto {
+        font-size: 1rem;
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    #sobre-texto {
+        font-size: 0.95rem;
+        padding: 0 10px;
+    }
+}
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .profile-content {
+        flex-direction: column;
+    }
+
+    .profile-info {
+        text-align: center;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .profile-image img {
+        width: 150px;
+    }
+
+    .name {
+        font-size: 1.8em;
+    }
+
+    .position {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 576px) {
+    .profile-image img {
+        width: 120px;
+    }
+
+    .name {
+        font-size: 1.6em;
+    }
+
+    .position {
+        font-size: 0.9em;
+    }
 }

@@ -1,51 +1,64 @@
 const cards = [
     {
-        imagemLink: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSqmXO8nCMqO8lMGqTnKM_7vgims6zAf9fEvVWRJw&s',
-        instituicao: 'JUCEMA',
-        inicioMes: 'Outubro',
-        inicioAno: '2021',
-        terminoMes: 'Agosto',
-        terminoAno: '2022',
-        cargo: 'Estagiário',
-        atuacao: 'Atuei no projeto de migração de dados do Consulta empresarial. O projeto consistiu em migrar o dados para melhorar performance e resultados, com base nas informações presentes no banco.'
+        imagemLink: 'https://media.licdn.com/dms/image/D4D03AQF0xdN7Q2XS4Q/profile-displayphoto-shrink_800_800/0/1673450964826?e=2147483647&v=beta&t=ywL6nJJDaY8xzCI8Sfrorqw0_TCuyjO8rE6BrfXp4wI',
+        instituicao: 'Coreplan Gestão Tecnologia e Serviços LTDA',
+        localizacao: 'Fortaleza, CE',
+        inicioMes: 'Novembro',
+        inicioAno: '2023',
+        terminoMes: 'Atualmente',
+        terminoAno: '',
+        cargo: 'Analista de Suporte de TI',
+        atuacao: 'Atuo na manutenção do Sistema de Processos Automatizados (SPA), prestando suporte técnico especializado para procuradorias estaduais e municipais (PGE e PGM) e participando do processo de análise e uso do sistema junto ao cliente.',
+        link: 'https://www.coreplan.com.br/'
     },
     {
         imagemLink: 'https://www.tjma.jus.br/imagens/logo_share.png',
-        instituicao: 'TJMA',
+        instituicao: 'Tribunal de Justiça do Maranhão (TJMA)',
+        localizacao: 'São Luís, MA',
         inicioMes: 'Agosto',
         inicioAno: '2022',
         terminoMes: 'Novembro',
         terminoAno: '2023',
-        cargo: 'Estagiário',
-        atuacao: "Atuei no sistema SAPRE do TJMA, sistema de precatórios. Ajudei no gerenciamento de demandas para melhorar organização, além de auxiliar nas análise de código e resolução de bugs"
+        cargo: 'Estagiário de Desenvolvimento de Software',
+        atuacao: 'Participei do desenvolvimento e manutenção do sistema SAPRE, focado na gestão de precatórios. Contribuí para o gerenciamento de demandas, organização da equipe via metodologias ágeis (Scrum), e auxiliei na análise de código e resolução de bugs.',
+        link: 'https://www.tjma.jus.br/'
     },
     {
-        imagemLink: 'https://media.licdn.com/dms/image/D4D03AQF0xdN7Q2XS4Q/profile-displayphoto-shrink_800_800/0/1673450964826?e=2147483647&v=beta&t=ywL6nJJDaY8xzCI8Sfrorqw0_TCuyjO8rE6BrfXp4wI',
-        instituicao: 'Coreplan',
-        inicioMes: 'Novembro',
-        inicioAno: '2023',
-        terminoMes: '',
-        terminoAno: '',
-        cargo: 'Suporte de TI',
-        atuacao: 'Atuo na manutenção do Sistema de Processos Automatizados, participando diretamente com o cliente no processo de analise e uso do sistema, como a Procuradoria Geral do Estado do Maranhão'
-    }
+        imagemLink: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSqmXO8nCMqO8lMGqTnKM_7vgims6zAf9fEvVWRJw&s',
+        instituicao: 'Junta Comercial do Estado do Maranhão (JUCEMA)',
+        localizacao: 'São Luís, MA',
+        inicioMes: 'Outubro',
+        inicioAno: '2021',
+        terminoMes: 'Agosto',
+        terminoAno: '2022',
+        cargo: 'Estagiário de Desenvolvimento de Software',
+        atuacao: 'Atuei na migração do banco de dados do sistema de Consulta Empresarial, transferindo dados de PLSQL para MongoDB e depois para Apache Pinot, visando melhorar a performance e os resultados das consultas.',
+        link: 'https://www.jucema.ma.gov.br/'
+    },
 ];
 
 function criarCard(card) {
+    const termino = card.terminoAno ? `${card.terminoMes} de ${card.terminoAno}` : 'Atualmente';
+
     return `
-        <div class="card m-2" style="max-width: 40rem; margin-left: auto; margin-right: auto; width: calc(100% - 40px);">
-          <div class="col-md-12">
-              <div class="card-body">
-                <h5 class="card-title">${card.instituicao} - ${card.cargo}</h5>
-                <p class="card-text">${card.atuacao}</p>
-                <div class="bottom">
-                    <p class="badge bg-primary">${card.inicioMes} de ${card.inicioAno}</p>
-                    <p class="badge bg-primary">${card.terminoMes} de ${card.terminoAno}</p>                
-                </div>
-              </div>
-            </div>
-        </div>
-    `;
+    <div class="card experience-card m-3">
+      <div class="experience-header d-flex align-items-center">
+          <img src="${card.imagemLink}" alt="${card.instituicao}" class="experience-img">
+          <div class="experience-info">
+              <h5 class="experience-title">${card.instituicao} - ${card.cargo}</h5>
+              <p class="experience-location">${card.localizacao}</p>
+          </div>
+      </div>
+      <div class="experience-body">
+          <p class="experience-description">${card.atuacao}</p>
+          <div class="experience-dates">
+              <span class="badge badge-start">${card.inicioMes} de ${card.inicioAno}</span>
+              <span class="badge badge-end">${termino}</span>
+          </div>
+          ${card.link ? `<a href="${card.link}" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-link">Conheça</a>` : ''}
+      </div>
+    </div>
+  `;
 }
 
 const cardContainer = document.getElementById('experienciaContainer');

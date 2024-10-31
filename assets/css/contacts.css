@@ -1,0 +1,36 @@
+.contatos-section {
+    color: #ffffff;
+    padding: 40px 0;
+}
+
+.contatos-section h2 {
+    color: #FAC345;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Layout de Badges */
+.contatos-badges {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* Badges de Contato */
+.contatos-badges a img {
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-radius: 8px;
+}
+
+.contatos-badges a img:hover {
+    transform: scale(1.05); /* Efeito de zoom */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 576px) {
+    .contatos-badges a img {
+        width: 90%; /* Ajusta o tamanho das badges em telas menores */
+    }
+}

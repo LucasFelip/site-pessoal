@@ -6,6 +6,7 @@
     <script src="/assets/js/imports.js"></script>
     <link href="/assets/css/cardProjeto.css" rel="stylesheet">
     <link href="/assets/css/cardHab.css" rel="stylesheet">
+    <link href="/assets/css/cardExp.css" rel="stylesheet">
 
     <title>Lucas Ferreira</title>
 </head>
@@ -15,17 +16,19 @@
 </header>
 
 <main class="container-fluid text-center lh-lg">
-    <section id="principal" class="container ">
-        <div class="row mb-5 py-3 mt-2">
-        <h2>Sobre mim</h2>
-        <p>Meu nome é Lucas Ferreira e sou um profissional de TI apaixonado por tecnologia e desenvolvimento. Com
-            formação acadêmica em Sistemas de Informação e experiência prática, me tornei um desenvolvedor Java
-            habilidoso, buscando sempre aprimorar minhas habilidades nessa linguagem.
-            Desde o ensino médio, percebi que a área de TI era minha vocação, desde então busco aprender e me atualizar constantemente.
-            Nesta jornada profissional e pessoal, continuo buscando novos desafios e oportunidades de crescimento,
-            sempre aberto a aprender novas tecnologias, a enfrentar projetos inovadores e a contribuir para o
-            avanço da TI.</p>
+    <section id="principal" class="container text-center">
+        <div class="profile-content">
+            <div class="profile-info">
+                <h1 class="name">Lucas Ferreira</h1>
+                <p class="position">Desenvolvedor</p>
+            </div>
+            <div class="profile-image">
+                <img src="/assets/img/lucas-removebg.png" alt="Foto de Perfil">
+            </div>
         </div>
+        <p id="sobre-texto">
+            Sou Lucas Ferreira, desenvolvedor de TI com foco em Java e tecnologias backend. Apaixonado por inovação, busco aprimorar minhas habilidades constantemente e estou sempre em busca de novos desafios para crescer na área. Minha jornada é guiada pela vontade de aprender e contribuir para soluções tecnológicas que impactem positivamente.
+        </p>
     </section>
 
     <section class="border-top">
@@ -34,9 +37,10 @@
             <div class="row justify-content-center  py-2" id="habilidadesContainer"></div>
         </div>
 
-        <div id="projetos" class="py-4 ">
-            <h2>Projetos</h2>
-            <div class=" py-5" id="projetosContainer"></div>
+        <div id="projetos" class="py-4">
+            <h2>Projetos Acadêmicos e Pessoais</h2>
+            <div id="projetosContainer" class="row justify-content-center"></div>
+            <button id="loadMoreButton" class="load-more-button">Exibir mais projetos</button>
         </div>
 
         <div id="experiencias" class="py-4 ">
@@ -49,6 +53,5 @@
 </main>
 
 <script src="https://unpkg.com/scroll"></script>
-<script src="/assets/js/Itens.js"></script>
 </body>
 </html>

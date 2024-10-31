@@ -1,94 +1,117 @@
-#projetosContainer {
-    display: flex;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch; /* Melhora a rolagem em dispositivos com iOS */
-    gap: 16px; /* Espaçamento entre os cards */
-    padding: 16px; /* Espaçamento interno, ajuste conforme necessário */
-}
-
-.article-wrapper {
-    width: 17em;
+/* Card do projeto */
+.project-card {
+    width: 100%;
+    max-width: 350px;
     margin: 1em;
-    -webkit-transition: 0.15s all ease-in-out;
-    transition: 0.15s all ease-in-out;
-    border-radius: 10px;
-    padding: 5px;
-    border: 4px solid transparent;
-    cursor: pointer;
-    background-color: white;
-}
-
-.types {
-    gap: 10px;
-    display: -webkit-box;
-    display: -ms-flexbox;
+    padding: 16px;
+    background-color: #fefefe;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
-    place-content: flex-start;
-}
-
-.rounded-lg {
-    border-radius: 10px;
-}
-
-.project-info {
-    padding-top: 20px;
-    padding: 10px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column;
-    gap: 20px;
-}
-
-.project-title {
-    font-size: 2em;
-    margin: 0;
-    font-weight: 600;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    color: black;
-}
-
-.flex-pr {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
     justify-content: space-between;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
+    gap: 16px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Header do card */
+.project-card__header {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
+/* Título e badge */
+.project-card__title h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #333;
+    margin: 0;
+}
+
+.badge-info {
+    background-color: transparent;
+    border: 2px solid #333;
+    color: #333;
+    padding: 0.2em 0.5em;
+    border-radius: 10px;
+    font-size: 0.85em;
+}
+
+/* Descrição do projeto */
+.project-card__description {
+    color: #333;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Rodapé do card */
+footer {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Tecnologias utilizadas no projeto */
+.project-card__types {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
 .project-type {
-    background: #1F1F1F;
-    color: #FAC345;
+    background: #333;
+    color: white;
     font-weight: bold;
     padding: 0.3em 0.7em;
     border-radius: 15px;
-    font-size: 12px;
-    letter-spacing: -0.6px;
+    font-size: 0.9em;
 }
 
-.project-hover {
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    padding: 9px;
-    -webkit-transition: all 0.3s ease;
-    transition: all 0.3s ease;
+/* Botão de "Ver mais" */
+.project-card__button {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+    background-color: #333;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
 }
 
-.container-project {
-    max-width: 100%;
-    max-height: 170px;
-    width: auto;
-    height: auto;
-    background: gray;
+.project-card__button:hover {
+    background-color: #555;
+}
+
+/* Botão "Exibir mais projetos" */
+.load-more-button {
+    display: inline-block;
+    margin: 20px auto;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #FAC345; /* Texto em amarelo */
+    background-color: transparent;
+    border: 2px solid #FAC345;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.load-more-button:hover {
+    background-color: #FAC345;
+    color: #333; /* Cor de texto ao passar o mouse */
 }
