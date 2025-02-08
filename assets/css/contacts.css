@@ -1,36 +1,43 @@
-.contatos-section {
-    color: #ffffff;
-    padding: 40px 0;
-}
-
-.contatos-section h2 {
-    color: #FAC345;
-    font-size: 2em;
-    margin-bottom: 20px;
-}
-
-/* Layout de Badges */
-.contatos-badges {
+.contact-container {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    gap: 15px;
+    gap: 20px;
 }
 
-/* Badges de Contato */
-.contatos-badges a img {
-    transition: transform 0.3s, box-shadow 0.3s;
-    border-radius: 8px;
+.contact-item {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+    font-size: 1.8rem;
+    color: var(--text-color);
+    text-decoration: none;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
 }
 
-.contatos-badges a img:hover {
-    transform: scale(1.05); /* Efeito de zoom */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+.contact-item:hover {
+    transform: scale(1.15);
 }
 
-/* Responsividade para telas menores */
-@media (max-width: 576px) {
-    .contatos-badges a img {
-        width: 90%; /* Ajusta o tamanho das badges em telas menores */
+/*.contact-item:nth-child():hover { background: #6441a5; }  !* Twitch *!*/
+.contact-item:nth-child(1):hover { background: #D44638; }  /* Gmail */
+.contact-item:nth-child(2):hover { background: #0077B5; }  /* LinkedIn */
+.contact-item:nth-child(3):hover { background: #333; }      /* GitHub */
+.contact-item:nth-child(4):hover { background: #5865F2; }   /* Discord */
+
+@media (max-width: 768px) {
+    .contact-container {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .contact-item {
+        width: 50px;
+        height: 50px;
+        font-size: 1.5rem;
     }
 }
