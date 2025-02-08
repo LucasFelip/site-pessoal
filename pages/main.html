@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="/assets/js/imports.js"></script>
     <link href="/assets/css/cardProjeto.css" rel="stylesheet">
-    <link href="/assets/css/cardHab.css" rel="stylesheet">
     <link href="/assets/css/cardExp.css" rel="stylesheet">
 
     <title>Lucas Ferreira</title>
@@ -20,23 +19,15 @@
         <div class="profile-content">
             <div class="profile-info">
                 <h1 class="name">Lucas Ferreira</h1>
-                <p class="position">Desenvolvedor</p>
+                <p class="position">Desenvolvedor Java</p>
             </div>
-            <div class="profile-image">
-                <img src="/assets/img/lucas-removebg.png" alt="Foto de Perfil">
-            </div>
+            <p id="sobre-texto">
+                Sou Lucas Ferreira, desenvolvedor especializado em Java com foco no backend, mas com conhecimento em diversas outras linguagens e tecnologias. Possuo formação técnica em Redes de Computadores, bacharelado em Sistemas de Informação e atualmente sou mestrando em Ciência da Computação. Minha trajetória é marcada pela busca contínua por aprendizado, inovação e pelo desejo de contribuir com soluções tecnológicas que impactem positivamente pessoas e organizações.
+            </p>
         </div>
-        <p id="sobre-texto">
-            Sou Lucas Ferreira, desenvolvedor de TI com foco em Java e tecnologias backend. Apaixonado por inovação, busco aprimorar minhas habilidades constantemente e estou sempre em busca de novos desafios para crescer na área. Minha jornada é guiada pela vontade de aprender e contribuir para soluções tecnológicas que impactem positivamente.
-        </p>
     </section>
 
-    <section class="border-top">
-        <div id="habilidades" class="py-4 ">
-            <h2>Habilidades</h2>
-            <div class="row justify-content-center  py-2" id="habilidadesContainer"></div>
-        </div>
-
+    <section class="border-top py-4">
         <div id="projetos" class="py-4">
             <h2>Projetos Acadêmicos e Pessoais</h2>
             <div id="projetosContainer" class="row justify-content-center"></div>
@@ -47,11 +38,10 @@
             <h2>Experiências</h2>
             <div class="row justify-content-center  py-2" id="experienciaContainer"></div>
         </div>
+
+        <div class="py-4" data-include="section/contacts.html"></div>
     </section>
-
-    <div class="" data-include="section/footerContatos.html"></div>
+    <div data-include="section/footer.html"></div>
 </main>
-
-<script src="https://unpkg.com/scroll"></script>
 </body>
 </html>

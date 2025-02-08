@@ -1,7 +1,7 @@
 const cards = [
     {
         imagemLink: 'https://media.licdn.com/dms/image/D4D03AQF0xdN7Q2XS4Q/profile-displayphoto-shrink_800_800/0/1673450964826?e=2147483647&v=beta&t=ywL6nJJDaY8xzCI8Sfrorqw0_TCuyjO8rE6BrfXp4wI',
-        instituicao: 'Coreplan Gestão Tecnologia e Serviços LTDA',
+        instituicao: 'Coreplan Gestão Tecnologia e Serviços',
         localizacao: 'Fortaleza, CE',
         inicioMes: 'Novembro',
         inicioAno: '2023',
@@ -13,7 +13,7 @@ const cards = [
     },
     {
         imagemLink: 'https://www.tjma.jus.br/imagens/logo_share.png',
-        instituicao: 'Tribunal de Justiça do Maranhão (TJMA)',
+        instituicao: 'Tribunal de Justiça do Maranhão',
         localizacao: 'São Luís, MA',
         inicioMes: 'Agosto',
         inicioAno: '2022',
@@ -25,23 +25,29 @@ const cards = [
     },
     {
         imagemLink: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSqmXO8nCMqO8lMGqTnKM_7vgims6zAf9fEvVWRJw&s',
-        instituicao: 'Junta Comercial do Estado do Maranhão (JUCEMA)',
+        instituicao: 'Junta Comercial do Estado do Maranhão',
         localizacao: 'São Luís, MA',
         inicioMes: 'Outubro',
         inicioAno: '2021',
         terminoMes: 'Agosto',
         terminoAno: '2022',
         cargo: 'Estagiário de Desenvolvimento de Software',
-        atuacao: 'Atuei na migração do banco de dados do sistema de Consulta Empresarial, transferindo dados de PLSQL para MongoDB e depois para Apache Pinot, visando melhorar a performance e os resultados das consultas.',
+        atuacao: 'Atuei na migração do banco de dados do sistema de Consulta Empresarial, transferindo dados do banco PL/SQL  para o banco Apache Pinot, e posteriormente para o MongoDB, visando melhorar a performance e os resultados das consultas.',
         link: 'https://www.jucema.ma.gov.br/'
     },
 ];
+
+const orderedCards = cards.sort((a, b) => {
+    const dateA = new Date(a.terminoAno || new Date().getFullYear(), a.terminoMes === "Atualmente" ? 11 : new Date(Date.parse(a.inicioMes + " 1, " + a.inicioAno)).getMonth());
+    const dateB = new Date(b.terminoAno || new Date().getFullYear(), b.terminoMes === "Atualmente" ? 11 : new Date(Date.parse(b.inicioMes + " 1, " + b.inicioAno)).getMonth());
+    return dateB - dateA;
+});
 
 function criarCard(card) {
     const termino = card.terminoAno ? `${card.terminoMes} de ${card.terminoAno}` : 'Atualmente';
 
     return `
-    <div class="card experience-card m-3">
+    <div class="card experience-card">
       <div class="experience-header d-flex align-items-center">
           <img src="${card.imagemLink}" alt="${card.instituicao}" class="experience-img">
           <div class="experience-info">
@@ -62,8 +68,7 @@ function criarCard(card) {
 }
 
 const cardContainer = document.getElementById('experienciaContainer');
-
-cards.forEach(card => {
+orderedCards.forEach(card => {
     const cardHTML = criarCard(card);
     cardContainer.insertAdjacentHTML('beforeend', cardHTML);
 });

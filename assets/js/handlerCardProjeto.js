@@ -82,10 +82,9 @@ const todosProjetos  = [
     }
 ];
 
-const INITIAL_PROJECTS_TO_SHOW = 3; // Quantidade inicial de projetos exibidos
-let projectsDisplayed = INITIAL_PROJECTS_TO_SHOW; // Quantidade de projetos atualmente exibidos
+const INITIAL_PROJECTS_TO_SHOW = 3;
+let projectsDisplayed = INITIAL_PROJECTS_TO_SHOW;
 
-// Função para criar o card de cada projeto
 function criarCardProjeto(card) {
     return `
     <article class="project-card">
@@ -97,44 +96,60 @@ function criarCardProjeto(card) {
       </header>
       <p class="project-card__description">${card.descricao}</p>
       <footer>
-        <div class="project-card__types">
-            ${card.tipos.map(tipo => `<span class="project-type">${tipo}</span>`).join('')}
-        </div>
         ${card.githubLink ? `<a href="${card.githubLink}" class="project-card__button" target="_blank">Ver mais</a>` : ''}
       </footer>
     </article>
   `;
 }
 
-// Função para exibir projetos
 function renderProjects() {
     const projetosContainer = document.getElementById('projetosContainer');
-    projetosContainer.innerHTML = ''; // Limpa o container
+    const projetosAtuais = projetosContainer.children.length;
 
-    todosProjetos.slice(0, projectsDisplayed).forEach((card, index) => {
+    todosProjetos.slice(projetosAtuais, projectsDisplayed).forEach((card, index) => {
         const cardHTML = criarCardProjeto(card);
-        projetosContainer.insertAdjacentHTML('beforeend', cardHTML);
+        const tempDiv = document.createElement('div');
+        tempDiv.innerHTML = cardHTML;
 
-        // Adiciona a classe 'show' para animação
-        setTimeout(() => {
-            const lastProject = projetosContainer.lastElementChild;
-            lastProject.classList.add('show');
-        }, index * 100); // Diferencia o tempo para cada card
+        const novoProjeto = tempDiv.firstElementChild;
+        novoProjeto.classList.add('fade-in');
+        novoProjeto.style.animationDelay = `${index * 0.2}s`;
+
+        projetosContainer.appendChild(novoProjeto);
     });
 
-    // Mostrar ou esconder o botão "Exibir mais projetos"
     const loadMoreButton = document.getElementById('loadMoreButton');
-    loadMoreButton.style.display = projectsDisplayed >= todosProjetos.length ? 'none' : 'inline-block';
+    if (projectsDisplayed >= todosProjetos.length) {
+        loadMoreButton.style.display = 'none';
+    }
 }
 
-// Função para carregar mais projetos ao clicar no botão
+const style = document.createElement('style');
+style.innerHTML = `
+    .fade-in {
+        opacity: 0;
+        transform: translateY(15px);
+        animation: fadeInUp 0.5s ease-out forwards;
+    }
+
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(15px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+`;
+document.head.appendChild(style);
+
 function loadMoreProjects() {
-    projectsDisplayed += 3; // Adiciona mais 3 projetos a cada clique
+    projectsDisplayed += 3;
     renderProjects();
 }
 
-// Evento de clique para o botão "Exibir mais projetos"
 document.getElementById('loadMoreButton').addEventListener('click', loadMoreProjects);
 
-// Renderiza os projetos iniciais ao carregar a página
 renderProjects();
